@@ -1,6 +1,7 @@
 import { withRouter } from "next/router";
 import { motion } from "framer-motion";
 import HeroHome from "../components/HeroHome";
+import MusicPlayer from "../components/MusicPlayer";
 
 const home = ({ router }) => {
   return (
@@ -18,6 +19,7 @@ const home = ({ router }) => {
       }}
     >
       <HeroHome />
+      <MusicPlayer />
     </motion.div>
   );
 };

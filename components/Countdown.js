@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import shortid from "shortid";
 
 function calculateTimeLeft() {
-  const year = new Date().getFullYear();
   const difference = +new Date(`2022-02-26`) - +new Date();
   let timeLeft = {};
 
@@ -36,8 +36,15 @@ export default function Countdown() {
     }
 
     return (
-      <span className=" border-2 md:px-5 px-2 py-3 md:mx-3 mx-0.5 rounded bg-black bg-opacity-50 font-serif tracking-wider md:text-3xl text-base border-none">
-        {timeLeft[interval]} {interval}{" "}
+      <span
+        suppressHydrationWarning
+        key={shortid.generate()}
+        className="flex flex-col border-2 md:px-5 px-3 py-3 md:mx-3 mx-0.5 rounded bg-black bg-opacity-50 font-serif tracking-wider md:text-3xl text-base border-none"
+      >
+        <span className="text-xl md:text-3xl font-semibold">
+          {timeLeft[interval]}
+        </span>
+        <span className="font-thin">{interval}</span>
       </span>
     );
   });

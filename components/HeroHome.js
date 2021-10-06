@@ -1,11 +1,9 @@
 import { Popover } from "@headlessui/react";
-import { MailOpenIcon, ClockIcon } from "@heroicons/react/solid";
+import { ClockIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Countdown from "../components/Countdown";
-import MusicPlayer from "./MusicPlayer";
 import Link from "next/link";
-import brand from "../public/static/images/brand.png";
 import whitebrand from "../public/static/images/logoputih.png";
 
 export default function HeroHome() {
@@ -64,39 +62,6 @@ export default function HeroHome() {
           </>
         )}
       </Popover>
-      <MusicPlayer/>
     </div>
   );
-  // return (
-  //   <div className="relative hero bg-cover overflow-hidden h-screen text-white flex justify-center">
-  //     <Popover className="relative pt-6 pb-16 sm:pb-24">
-  //       {({ open }) => (
-  //         <>
-  //           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-  //             <nav
-  //               className="relative flex items-center  sm:h-10 md:justify-center justify-center"
-  //               aria-label="Global"
-  //             >
-  //               <div className="md:flex md:space-x-10 ">
-  //                 <h1 className="text-xl font-bold text-pink-500">LOGO</h1>
-  //               </div>
-  //             </nav>
-  //           </div>
-
-  //           <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-  //             <div className="text-center">
-  //               <h1 className="text-sm tracking-tight md:text-xl">
-  //                 <span className="block xl:inline">
-  //                   Kami mengundang Anda untuk bergabung di hari bahagia kami
-  //                 </span>
-  //               </h1>
-
-  //               <Countdown />
-  //             </div>
-  //           </main>
-  //         </>
-  //       )}
-  //     </Popover>
-  //   </div>
-  // );
 }
