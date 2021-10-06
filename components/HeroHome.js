@@ -3,6 +3,7 @@ import { MailOpenIcon, ClockIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Countdown from "../components/Countdown";
+import MusicPlayer from "./MusicPlayer";
 import Link from "next/link";
 import brand from "../public/static/images/brand.png";
 
@@ -62,6 +63,7 @@ export default function HeroHome() {
           </>
         )}
       </Popover>
+      <MusicPlayer/>
     </div>
   );
   // return (
