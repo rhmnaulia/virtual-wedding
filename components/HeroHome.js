@@ -36,9 +36,7 @@ export default function HeroHome() {
                   Indra & Fidelia
                 </h1>
                 <p>26 Februari 2022 | 09:00 WIB (GMT +7)</p>
-                {/* <div className="w-64 md:w-72 mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8">
-                  <Countdown />
-                </div> */}
+
                 <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8 hover:cursor-pointer">
                   <div className="rounded-md  flex justify-center">
                     <Link
@@ -55,6 +53,9 @@ export default function HeroHome() {
                       </a>
                     </Link>
                   </div>
+                </div>
+                <div className="mt-3 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-5">
+                  <Countdown />
                 </div>
               </div>
             </main>

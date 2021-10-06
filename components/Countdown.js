@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 function calculateTimeLeft() {
   const year = new Date().getFullYear();
@@ -18,9 +18,9 @@ function calculateTimeLeft() {
 }
 
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  React.useEffect(() => {
+  useEffect(() => {
     const id = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -36,15 +36,15 @@ export default function Countdown() {
     }
 
     return (
-      <span>
+      <span className=" border-2 md:px-5 px-2 py-3 md:mx-3 mx-0.5 rounded bg-black bg-opacity-50 font-serif tracking-wider md:text-3xl text-base border-none">
         {timeLeft[interval]} {interval}{" "}
       </span>
     );
   });
 
   return (
-    <div className="text-5xl my-20 flex">
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+    <div className=" my-20 flex">
+      {timerComponents.length ? timerComponents : <span>This is the day!</span>}
     </div>
   );
 }
