@@ -6,6 +6,7 @@ import Countdown from "../components/Countdown";
 import MusicPlayer from "./MusicPlayer";
 import Link from "next/link";
 import brand from "../public/static/images/brand.png";
+import whitebrand from "../public/static/images/logoputih.png";
 
 export default function HeroHome() {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function HeroHome() {
               >
                 <div className="md:flex md:space-x-10 md:justify-center justify-center">
                   <div className="w-48 md:w-1/4 md:mt-8">
-                    <Image src={brand} />
+                    <Image src={whitebrand} />
                   </div>
                 </div>
               </nav>
