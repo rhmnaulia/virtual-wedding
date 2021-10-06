@@ -1,15 +1,17 @@
 import { Popover } from "@headlessui/react";
 import { MailOpenIcon, ClockIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Countdown from "../components/Countdown";
 import MusicPlayer from "./MusicPlayer";
 import Link from "next/link";
+import brand from "../public/static/images/brand.png";
 
 export default function HeroHome() {
   const router = useRouter();
   return (
     <div className="relative hero bg-cover overflow-hidden h-screen text-white flex justify-center ">
-      <Popover className="relative pt-6 pb-16 sm:pb-24">
+      <Popover className="relative md:pt-6 pb-16 sm:pb-24">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -17,8 +19,10 @@ export default function HeroHome() {
                 className="relative flex items-center  sm:h-10 md:justify-center justify-center"
                 aria-label="Global"
               >
-                <div className="md:flex md:space-x-10 ">
-                  <h1 className="text-xl font-bold text-pink-500">LOGO</h1>
+                <div className="md:flex md:space-x-10 md:justify-center justify-center">
+                  <div className="w-48 md:w-1/4 md:mt-8">
+                    <Image src={brand} />
+                  </div>
                 </div>
               </nav>
             </div>
@@ -26,10 +30,14 @@ export default function HeroHome() {
               <div className="text-center">
                 <h1 className="text-sm tracking-tight md:text-xl">
                   <span className="block xl:inline font-serif tracking-wider">
-                    Kami mengundang Anda untuk bergabung di hari bahagia kami
+                    Undangan Pernikahan
                   </span>
                 </h1>
-                <div className="w-64 md:w-72 mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8"></div>
+                <h1 className="font-typography text-5xl py-4">
+                  Indra & Fidelia
+                </h1>
+                <p>26 Februari 2022 | 09:00 WIB (GMT +7)</p>
+
                 <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8 hover:cursor-pointer">
                   <div className="rounded-md  flex justify-center">
                     <Link
@@ -46,6 +54,9 @@ export default function HeroHome() {
                       </a>
                     </Link>
                   </div>
+                </div>
+                <div className="mt-3 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-5">
+                  <Countdown />
                 </div>
               </div>
             </main>
