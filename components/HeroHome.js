@@ -1,27 +1,12 @@
-import { Popover } from "@headlessui/react";
 import { ClockIcon } from "@heroicons/react/solid";
-import { useRouter } from "next/router";
-import Image from "next/image";
 import Countdown from "../components/Countdown";
 import Link from "next/link";
-import whitebrand from "../public/static/images/logoputih.png";
+import Navbar from "./Navbar";
 
 export default function HeroHome() {
   return (
-    <div className="relative hero bg-cover overflow-hidden h-screen text-white flex justify-center ">
+    <div className="relative mt-20 overflow-hidden h-screen text-white flex justify-center ">
       <div className="relative md:pt-6 pb-16 sm:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <nav
-            className="relative flex items-center  sm:h-10 md:justify-center justify-center"
-            aria-label="Global"
-          >
-            <div className="md:flex md:space-x-10 md:justify-center justify-center">
-              <div className="w-48 md:w-1/4 md:mt-8">
-                <Image src={whitebrand} />
-              </div>
-            </div>
-          </nav>
-        </div>
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
             <h1 className="text-sm tracking-tight md:text-xl">
