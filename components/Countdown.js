@@ -41,17 +41,26 @@ export default function Countdown() {
         key={shortid.generate()}
         className="flex flex-col border-2 md:px-5 px-3 py-3 md:mx-3 mx-0.5 rounded bg-black bg-opacity-50 font-serif tracking-wider md:text-3xl text-base border-none"
       >
-        <span className="text-xl md:text-3xl font-semibold">
+        <span
+          suppressHydrationWarning
+          className="text-xl md:text-3xl font-semibold"
+        >
           {timeLeft[interval]}
         </span>
-        <span className="font-thin">{interval}</span>
+        <span suppressHydrationWarning className="font-thin">
+          {interval}
+        </span>
       </span>
     );
   });
 
   return (
-    <div className=" my-20 flex">
-      {timerComponents.length ? timerComponents : <span>This is the day!</span>}
+    <div suppressHydrationWarning className=" my-20 flex">
+      {timerComponents.length ? (
+        timerComponents
+      ) : (
+        <span suppressHydrationWarning>This is the day!</span>
+      )}
     </div>
   );
 }

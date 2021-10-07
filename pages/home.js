@@ -2,6 +2,7 @@ import { withRouter } from "next/router";
 import { motion } from "framer-motion";
 import HeroHome from "../components/HeroHome";
 import MusicPlayer from "../components/MusicPlayer";
+import Navbar from "../components/Navbar";
 
 const Home = ({ router }) => {
   return (
@@ -18,7 +19,10 @@ const Home = ({ router }) => {
         },
       }}
     >
-      <HeroHome />
+      <div className="header bg-cover">
+        <Navbar />
+        <HeroHome />
+      </div>
       <MusicPlayer />
     </motion.div>
   );
