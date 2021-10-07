@@ -7,7 +7,7 @@ import logo from "../public/static/images/logo.png";
 export default function Landing() {
   const router = useRouter();
   return (
-    <div className="relative hero bg-cover overflow-hidden h-screen text-white flex justify-center items-center">
+    <div className="relative header bg-cover overflow-hidden h-screen text-white flex justify-center items-center">
       <div className="relative pt-6 pb-16 sm:pb-24">
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
