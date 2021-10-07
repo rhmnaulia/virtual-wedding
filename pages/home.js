@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import HeroHome from "../components/HeroHome";
 import MusicPlayer from "../components/MusicPlayer";
 
-const home = ({ router }) => {
+const Home = ({ router }) => {
   return (
     <motion.div
       key={router.route}
@@ -24,4 +24,4 @@ const home = ({ router }) => {
   );
 };
 
-export default withRouter(home);
+export default withRouter(Home);
