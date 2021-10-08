@@ -20,13 +20,9 @@ const Home = ({ router }) => {
         },
       }}
     >
-      <div className="header bg-cover">
-        <Navbar />
-        <HeroHome />
-      </div>
-      <div class="our-story">
-        <OurStory />
-      </div>
+      <Navbar />
+      <HeroHome />
+      <OurStory />
       <MusicPlayer />
     </motion.div>
   );
