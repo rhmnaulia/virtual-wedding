@@ -23,8 +23,8 @@ const Navbar = () => {
     >
       <div className="md:flex md:space-x-10 md:justify-center justify-center py-3">
         <div
-          className={`pt-5 md:pt-3.5 img-brand ${
-            navbar ? "w-48 md:w-48 " : "w-48 md:w-72 md:pt-16"
+          className={`pt-5 md:pt-3.5 ${
+            navbar ? "w-48 md:w-48 " : "w-48 md:w-72 md:mt-12"
           }`}
         >
           <Image src={whitebrand} />
