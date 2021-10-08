@@ -2,8 +2,10 @@ import CoupleImage from "../public/static/images/couple.jpg";
 import Image from "next/image";
 function OurStory() {
   return (
-    <div className=" flex justify-center items-center flex-col ">
-      <h1 className="text-4xl m-8 font-typography mb-6">Our Story</h1>
+    <div className=" flex justify-center items-center flex-col our-story-container">
+      <h1 className="text-black text-4xl m-8 font-typography mb-6">
+        Our Story
+      </h1>
 
       <div className="mb-8 h-72 w-72 relative">
         <Image
@@ -14,7 +16,7 @@ function OurStory() {
           className="rounded-full"
         />
       </div>
-      <div class="story flex flex-col w-10/12 lg:w-3/4 text-center text-sm md:text-base font-serif text-white ">
+      <div class="story flex flex-col w-10/12 lg:w-3/4 text-center text-sm md:text-base font-serif text-black ">
         <p>Berawal dari seorang teman, kami saling berkenalan.</p>
         <p>Malam demi malam telah saling kirim ratusan pesan.</p>
         <p className="mb-1 pb-3 ">
