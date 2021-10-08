@@ -1,13 +1,36 @@
+import { useState, useEffect } from "react";
 import { ClockIcon } from "@heroicons/react/solid";
 import Countdown from "../components/Countdown";
 import Link from "next/link";
-import Navbar from "./Navbar";
+import Image from "next/image";
+import whitebrand from "../public/static/images/logoputih.png";
 
 export default function HeroHome() {
+  const [brand, setBrand] = useState(true);
+  const changeBackground = () => {
+    if (window.scrollY >= 66) {
+      setBrand(false);
+    } else {
+      setBrand(true);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
-    <div className="relative mt-20 overflow-hidden h-screen text-white flex justify-center ">
+    <div className="relative header bg-cover overflow-hidden h-screen text-white flex justify-center ">
       <div className="relative md:pt-6 pb-16 sm:pb-24">
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+        {brand && (
+          <div className="bg-transparent sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">
+            <div className="md:flex md:space-x-10 md:justify-center justify-center py-3">
+              <div className="w-48 md:w-72  pt-5 md:pt-3.5 ">
+                <Image src={whitebrand} />
+              </div>
+            </div>
+          </div>
+        )}
+        <main className="mt-36 mx-auto max-w-7xl px-4 ">
           <div className="text-center">
             <h1 className="text-sm tracking-tight md:text-xl">
               <span className="block xl:inline font-serif tracking-wider">
