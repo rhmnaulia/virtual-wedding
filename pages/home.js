@@ -1,8 +1,10 @@
 import { withRouter } from "next/router";
 import { motion } from "framer-motion";
 import HeroHome from "../components/HeroHome";
+import MusicPlayer from "../components/MusicPlayer";
+import Navbar from "../components/Navbar";
 
-const home = ({ router }) => {
+const Home = ({ router }) => {
   return (
     <motion.div
       key={router.route}
@@ -17,9 +19,13 @@ const home = ({ router }) => {
         },
       }}
     >
-      <HeroHome />
+      <div className="header bg-cover">
+        <Navbar />
+        <HeroHome />
+      </div>
+      <MusicPlayer />
     </motion.div>
   );
 };
 
-export default withRouter(home);
+export default withRouter(Home);

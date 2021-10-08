@@ -1,7 +1,7 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import shortid from "shortid";
 
 function calculateTimeLeft() {
-  const year = new Date().getFullYear();
   const difference = +new Date(`2022-02-26`) - +new Date();
   let timeLeft = {};
 
@@ -18,9 +18,9 @@ function calculateTimeLeft() {
 }
 
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  React.useEffect(() => {
+  useEffect(() => {
     const id = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -36,15 +36,31 @@ export default function Countdown() {
     }
 
     return (
-      <span>
-        {timeLeft[interval]} {interval}{" "}
+      <span
+        suppressHydrationWarning
+        key={shortid.generate()}
+        className="flex flex-col border-2 md:px-5 px-3 py-3 md:mx-3 mx-0.5 rounded bg-black bg-opacity-50 font-serif tracking-wider md:text-3xl text-base border-none"
+      >
+        <span
+          suppressHydrationWarning
+          className="text-xl md:text-3xl font-semibold"
+        >
+          {timeLeft[interval]}
+        </span>
+        <span suppressHydrationWarning className="font-thin">
+          {interval}
+        </span>
       </span>
     );
   });
 
   return (
-    <div className="text-5xl my-20 flex">
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+    <div suppressHydrationWarning className=" my-20 flex">
+      {timerComponents.length ? (
+        timerComponents
+      ) : (
+        <span suppressHydrationWarning>This is the day!</span>
+      )}
     </div>
   );
 }
