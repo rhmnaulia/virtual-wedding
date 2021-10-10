@@ -1,4 +1,14 @@
-# Testing Isal
+# WebsiteWeddingProject
+
+***This is my markdown practices***
+
+- In this website project we try to make a website that contain wedding venue using [Google Maps](https://www.google.com/maps)
+
+- We try to show the wedding stream with [Youtube](https://www.youtube.com/)
+
+- last but not least, we try to use payment gateway to give bride some gift for their wedding by using [Xendit](https://www.xendit.co/)
+
+> Section above created by Isal
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
