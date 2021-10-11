@@ -19,7 +19,7 @@ export default function HeroHome() {
     window.addEventListener("scroll", changeBackground);
   });
   return (
-    <div className="relative header bg-cover overflow-hidden h-screen text-white flex justify-center ">
+    <div className="relative header bg-fixed overflow-hidden h-screen text-white flex justify-center ">
       <div className="relative md:pt-6 pb-16 sm:pb-24">
         {brand && (
           <div className="bg-transparent sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">

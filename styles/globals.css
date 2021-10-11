@@ -19,4 +19,5 @@
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
