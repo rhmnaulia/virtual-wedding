@@ -3,7 +3,7 @@ import { ClockIcon } from "@heroicons/react/solid";
 import Countdown from "../components/Countdown";
 import Link from "next/link";
 import Image from "next/image";
-import whitebrand from "../public/static/images/logoputih.png";
+import whitebrand from "../../public/static/images/logoputih.png";
 
 export default function HeroHome() {
   const [brand, setBrand] = useState(true);

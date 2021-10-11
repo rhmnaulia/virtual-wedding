@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import whitebrand from "../public/static/images/logoputih.png";
+import whitebrand from "../../public/static/images/logoputih.png";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dummy from "../public/static/images/hero.jpg";
+import dummy from "../../public/static/images/jembatan.jpg";
 
 const dumdum = [1, 2, 3, 4, 5];
 

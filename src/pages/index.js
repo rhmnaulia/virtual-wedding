@@ -1,8 +1,7 @@
-import { Popover } from "@headlessui/react";
 import { MailOpenIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import logo from "../public/static/images/logo.png";
+import logo from "../../public/static/images/logo.png";
 
 export default function Landing() {
   const router = useRouter();
