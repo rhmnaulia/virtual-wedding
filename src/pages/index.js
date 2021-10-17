@@ -1,37 +1,92 @@
-import { MailOpenIcon } from "@heroicons/react/solid";
-import { useRouter } from "next/router";
-import Image from "next/image";
-import logo from "../../public/static/images/logo.png";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import HeroHome from "../components/HeroHome";
+import MusicPlayer from "../components/MusicPlayer";
+import Navbar from "../components/Navbar";
+import OurStory from "../components/OurStory";
+import Landing from "../components/Landing";
+import { supabase } from "../lib/supabaseClient";
 
-export default function Landing() {
-  const router = useRouter();
+const Home = () => {
+  const [loading, setLoading] = useState(true);
+  const [isLanding, setIsLanding] = useState(true);
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    try {
+      setLoading(true);
+
+      let { data, error, status } = await supabase
+        .from("guestbook")
+        .select(`name,message`);
+
+      if (error && status !== 406) {
+        throw error;
+      }
+
+      if (data) {
+        console.log(data);
+      }
+    } catch (error) {
+      alert(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  async function addData({ name, message }) {
+    try {
+      setLoading(true);
+
+      const addGuest = {
+        name,
+        message,
+        created_at: new Date(),
+      };
+
+      let { error } = await supabase.from("guestbook").insert(addGuest, {
+        returning: "minimal", // Don't return the value after inserting
+      });
+
+      if (error) {
+        throw error;
+      }
+    } catch (error) {
+      alert(error.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const handleClick = () => {
+    setIsLanding(false);
+  };
+
+  if (isLanding) {
+    return <Landing btnAction={handleClick} />;
+  }
   return (
-    <div className="relative header bg-cover overflow-hidden h-screen text-white flex justify-center items-center">
-      <div className="relative pt-6 pb-16 sm:pb-24">
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-          <div className="text-center">
-            <h1 className="text-sm tracking-tight md:text-xl">
-              <span className="block xl:inline font-serif tracking-wider">
-                Kami mengundang Anda untuk bergabung di hari bahagia kami
-              </span>
-            </h1>
-            <div className="w-64 md:w-72 mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8">
-              <Image src={logo} alt="I & F Wedding" />
-            </div>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-12">
-              <div
-                className="rounded-md  flex justify-center"
-                onClick={() => router.push("/home")}
-              >
-                <a className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-white bg-transparent text-base font-medium rounded-md text-white  hover:bg-white hover:text-black md:py-2 md:text-lg md:px-10">
-                  <span>Open The Invitation</span>{" "}
-                  <MailOpenIcon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
-    </div>
+    <motion.div
+      initial="initial"
+      animate="animate"
+      variants={{
+        initial: {
+          opacity: 0,
+        },
+        animate: {
+          opacity: 1,
+        },
+      }}
+    >
+      <Navbar />
+      <HeroHome />
+      <OurStory />
+      <MusicPlayer />
+    </motion.div>
   );
-}
+};
+
+export default Home;
