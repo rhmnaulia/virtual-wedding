@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import HeroHome from "../components/HeroHome";
-import MusicPlayer from "../components/MusicPlayer";
+import HeroHome from "../layouts/HeroHome";
+import MusicPlayer from "../components/MusicPlayer.jsx";
 import Navbar from "../components/Navbar";
-import OurStory from "../components/OurStory";
-import Landing from "../components/Landing";
+import OurStory from "../layouts/OurStory";
+import Landing from "../layouts/Landing";
+import Thankyou from "../layouts/Thankyou";
 import { supabase } from "../lib/supabaseClient";
 
 const Home = () => {
@@ -84,6 +85,7 @@ const Home = () => {
       <Navbar />
       <HeroHome />
       <OurStory />
+      <Thankyou />
       <MusicPlayer />
     </motion.div>
   );
