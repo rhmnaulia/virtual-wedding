@@ -7,6 +7,7 @@ import OurStory from "../layouts/OurStory";
 import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
 import { supabase } from "../lib/supabaseClient";
+import ImageGallery from "../components/ImageGallery";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -85,6 +86,7 @@ const Home = () => {
       <Navbar />
       <HeroHome />
       <OurStory />
+      <ImageGallery />
       <Thankyou />
       <MusicPlayer />
     </motion.div>
