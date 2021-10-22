@@ -31,3 +31,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.healthProtocol-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("/static/images/healthProtocolBg.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+

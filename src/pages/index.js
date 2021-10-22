@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import OurStory from "../layouts/OurStory";
 import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
+import HealthProtocol from "../layouts/HealthProtocol";
 import { supabase } from "../lib/supabaseClient";
 
 const Home = () => {
@@ -86,6 +87,7 @@ const Home = () => {
       <HeroHome />
       <OurStory />
       <Thankyou />
+      <HealthProtocol />
       <MusicPlayer />
     </motion.div>
   );
