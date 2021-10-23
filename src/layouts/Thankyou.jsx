@@ -4,7 +4,7 @@ import Logo from "../../public/static/images/logo.png";
 
 function Thankyou() {
   return (
-    <div className="text-center text-white bg-opacity-100 flex flex-col justify-center items-center thankyou-container">
+    <div className="text-center bg-pink-800 text-white bg-opacity-100 flex flex-col justify-center items-center thankyou-container">
       <Container>
         <div className="px-2">
           <h1 className="text-5xl m-8 font-typography "> Thank You</h1>

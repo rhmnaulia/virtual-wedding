@@ -23,11 +23,11 @@
   background-attachment: fixed;
 }
 
-.thankyou-container {
+/* .thankyou-container {
   background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
     url("/static/images/thankyoupic.jpg");
-  background-size: cover; /* or contain depending on what you want */
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
