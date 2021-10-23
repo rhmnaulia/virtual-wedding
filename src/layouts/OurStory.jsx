@@ -1,9 +1,10 @@
 import CoupleImage from "../../public/static/images/couple.jpg";
 import Image from "next/image";
+
 function OurStory() {
   return (
-    <div className="flex justify-center items-center flex-col our-story-container">
-      <h1 className="text-black text-4xl m-8 font-typography mb-6">
+    <div className="flex justify-center items-center py-16 flex-col our-story-container">
+      <h1 className="text-4xl  font-typography mb-10 font-semibold">
         Our Story
       </h1>
 
@@ -61,7 +62,7 @@ function OurStory() {
 
         {/* fifth paragraph */}
 
-        <p className="mb-10">
+        <p>
           Terimakasih telah saling sabar menunggu hingga hari kita bertemu dan
           terimakasih untuk saling memilih tanpa ragu.
         </p>
