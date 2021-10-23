@@ -10,18 +10,18 @@
   background-repeat: no-repeat;
 }
 
-.our-story-container {
+/* .our-story-container {
   background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.9)
     ),
     url("../../public/static/images/jembatan.jpg");
-  background-size: cover; /* or contain depending on what you want */
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 
 /* .thankyou-container {
   background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
