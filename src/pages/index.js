@@ -7,14 +7,15 @@ import OurStory from "../layouts/OurStory";
 import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
 import { supabase } from "../lib/supabaseClient";
+import { BrideGroom } from "../layouts/BrideGroom";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [isLanding, setIsLanding] = useState(true);
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   const getData = async () => {
     try {
@@ -84,6 +85,7 @@ const Home = () => {
     >
       <Navbar />
       <HeroHome />
+      <BrideGroom />
       <OurStory />
       <Thankyou />
       <MusicPlayer />

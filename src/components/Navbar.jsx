@@ -18,7 +18,7 @@ const Navbar = () => {
 
   if (navbar) {
     return (
-      <div className="bg-black sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">
+      <div className="bg-black bg-opacity-70 backdrop-filter backdrop-blur-sm sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">
         <div className="md:flex md:space-x-10 md:justify-center justify-center py-3">
           <div className="w-48 md:w-48 pt-4 md:pt-3.5">
             <Image src={whitebrand} />
