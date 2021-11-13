@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import { motion } from "framer-motion";
 import HeroHome from "../layouts/HeroHome";
 import MusicPlayer from "../components/MusicPlayer.jsx";
 import Navbar from "../components/Navbar";
@@ -9,9 +8,9 @@ import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
 import BrideGroom from "../layouts/BrideGroom";
 import Guestbook from "../layouts/Guestbook";
+import Layout from "../layouts/Layout";
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
   const [isLanding, setIsLanding] = useState(true);
 
   const handleClick = () => {
@@ -33,23 +32,7 @@ const Home = () => {
     );
   }
   return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      variants={{
-        initial: {
-          opacity: 0,
-        },
-        animate: {
-          opacity: 1,
-        },
-      }}
-    >
-      <Head>
-        <title>FINDELOVE</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      {/* SECTION */}
+    <Layout>
       <Navbar />
       <HeroHome />
       <BrideGroom />
@@ -57,7 +40,7 @@ const Home = () => {
       <Guestbook />
       <Thankyou />
       <MusicPlayer />
-    </motion.div>
+    </Layout>
   );
 };
 
