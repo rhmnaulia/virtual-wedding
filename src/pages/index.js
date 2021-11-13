@@ -7,62 +7,12 @@ import Navbar from "../components/Navbar";
 import OurStory from "../layouts/OurStory";
 import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
-import { supabase } from "../lib/supabaseClient";
-import { BrideGroom } from "../layouts/BrideGroom";
+import BrideGroom from "../layouts/BrideGroom";
+import Guestbook from "../layouts/Guestbook";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [isLanding, setIsLanding] = useState(true);
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
-  const getData = async () => {
-    try {
-      setLoading(true);
-
-      let { data, error, status } = await supabase
-        .from("guestbook")
-        .select(`name,message`);
-
-      if (error && status !== 406) {
-        throw error;
-      }
-
-      if (data) {
-        console.log(data);
-      }
-    } catch (error) {
-      alert(error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  async function addData({ name, message }) {
-    try {
-      setLoading(true);
-
-      const addGuest = {
-        name,
-        message,
-        created_at: new Date(),
-      };
-
-      let { error } = await supabase.from("guestbook").insert(addGuest, {
-        returning: "minimal", // Don't return the value after inserting
-      });
-
-      if (error) {
-        throw error;
-      }
-    } catch (error) {
-      alert(error.message);
-    } finally {
-      setLoading(false);
-    }
-  }
 
   const handleClick = () => {
     setIsLanding(false);
@@ -104,6 +54,7 @@ const Home = () => {
       <HeroHome />
       <BrideGroom />
       <OurStory />
+      <Guestbook />
       <Thankyou />
       <MusicPlayer />
     </motion.div>

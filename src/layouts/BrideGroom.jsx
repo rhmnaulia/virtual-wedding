@@ -4,7 +4,7 @@ import Link from "next/link";
 import groom from "../../public/static/images/groom.jpg";
 import bride from "../../public/static/images/bride.jpg";
 
-export const BrideGroom = () => {
+export default function BrideGroom() {
   return (
     <div className="bg-indigo-100">
       <Container>
@@ -109,4 +109,4 @@ export const BrideGroom = () => {
       </Container>
     </div>
   );
-};
+}
