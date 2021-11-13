@@ -25,8 +25,8 @@ export default function Guestbook() {
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
       </div>
-      <div className="relative max-w-7xl lg:mx-5 mx-auto lg:grid lg:grid-cols-5">
-        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+      <div className="relative  mx-auto lg:grid lg:grid-cols-12">
+        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-5 lg:px-14 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <h1 className="text-5xl font-typography font-semibold pb-10">
               Guestbook
@@ -77,8 +77,8 @@ export default function Guestbook() {
             </form>
           </div>
         </div>
-        <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
-          <div className="overflow-y-scroll max-w-lg mx-auto lg:max-w-none">
+        <div className="bg-white py-16  lg:col-span-7 lg:py-24  xl:pl-12">
+          <div className="overflow-y-scroll px-4 lg:px-0">
             {guestData &&
               guestData.map((guest, index) => {
                 return (
