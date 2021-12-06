@@ -8,10 +8,22 @@ html {
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../../public/static/images/Hero.jpg");
+    url("../../public/static/images/berdua13.JPG");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
+  animation: 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+      url("../../public/static/images/berdua7.JPG");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: 0.5s;
+  }
 }
 
 .wishes-box {

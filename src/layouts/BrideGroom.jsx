@@ -1,8 +1,8 @@
 import Container from "../components/Container";
 import Image from "next/image";
 import Link from "next/link";
-import groom from "../../public/static/images/groom.jpg";
-import bride from "../../public/static/images/bride.jpg";
+import bride from "../../public/static/images/fidel1.JPG";
+import groom from "../../public/static/images/indra1.JPG";
 
 export default function BrideGroom() {
   return (

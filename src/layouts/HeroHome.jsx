@@ -20,9 +20,9 @@ export default function HeroHome() {
   });
   return (
     <div className="relative header bg-fixed overflow-hidden h-screen text-white flex justify-center ">
-      <div className="relative md:pt-6 pb-16 sm:pb-24">
+      <div className="relative duration-1000 md:pt-6 pb-16 sm:pb-24">
         {brand && (
-          <div className="bg-transparent sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">
+          <div className="bg-transparent duration-1000 sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">
             <div className="md:flex md:space-x-10 md:justify-center justify-center py-3">
               <div className="w-48 md:w-72  pt-5 md:pt-3.5 ">
                 <Image src={whitebrand} />
