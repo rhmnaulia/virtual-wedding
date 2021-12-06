@@ -7,7 +7,7 @@ const Pause = () => {
       className="h-12 w-12"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="currentColor"
+      stroke="pink"
     >
       <path
         strokeLinecap="round"
@@ -26,7 +26,7 @@ const Play = () => {
       className="h-12 w-12"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="currentColor"
+      stroke="pink"
     >
       <path
         strokeLinecap="round"
@@ -46,7 +46,7 @@ const Play = () => {
 
 export default function MusicPlayer() {
   const [audio] = useState(
-    typeof Audio !== "undefined" && new Audio("/music/EtherealEternit.mp3")
+    typeof Audio !== "undefined" && new Audio("/music/OnlyYou.mp3")
   );
   const [isPlaying, setIsPlaying] = useState(true);
 
