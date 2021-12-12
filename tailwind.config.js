@@ -5,6 +5,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        primary: "#212121",
+        secondary: "#79a090",
+        accent: "#D9CAB3",
+        palewhite: "#F6F6F6",
+      },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         serif: ["Lora", ...defaultTheme.fontFamily.serif],

@@ -47,7 +47,7 @@ export default function Countdown() {
         >
           {timeLeft[interval]}
         </span>
-        <span suppressHydrationWarning className="font-thin">
+        <span suppressHydrationWarning className="font-thin text-accent">
           {interval}
         </span>
       </span>

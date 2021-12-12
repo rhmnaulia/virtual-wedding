@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Head from "next/head";
 import HeroHome from "../layouts/HeroHome";
 import MusicPlayer from "../components/MusicPlayer.jsx";
@@ -9,6 +9,8 @@ import Thankyou from "../layouts/Thankyou";
 import BrideGroom from "../layouts/BrideGroom";
 import Guestbook from "../layouts/Guestbook";
 import Layout from "../layouts/Layout";
+import Venue from "../layouts/Venue";
+import RSVP from "../layouts/RSVP";
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -38,6 +40,8 @@ const Home = () => {
       <BrideGroom />
       <OurStory />
       <Guestbook />
+      <Venue />
+      {/* <RSVP /> */}
       <Thankyou />
       <MusicPlayer />
     </Layout>
