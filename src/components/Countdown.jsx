@@ -45,7 +45,7 @@ export default function Countdown() {
           suppressHydrationWarning
           className="text-xl md:text-3xl font-semibold"
         >
-          {timeLeft[interval]}
+          {timeLeft[interval] ? timeLeft[interval] : 0}
         </span>
         <span suppressHydrationWarning className="font-thin text-accent">
           {interval}
@@ -55,11 +55,21 @@ export default function Countdown() {
   });
 
   return (
-    <div suppressHydrationWarning className=" my-20 flex">
+    <div suppressHydrationWarning className="my-20 flex justify-center">
       {timerComponents.length ? (
         timerComponents
       ) : (
-        <span suppressHydrationWarning>This is the day!</span>
+        <div
+          suppressHydrationWarning
+          className="text-palewhite px-5 text-center"
+        >
+          <h3 className="font-serif text-4xl lg:text-3xl">Today is the day!</h3>
+          <p className="text-justify mt-3 font-serif text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            pariatur dolores similique ipsum veritatis, illo eveniet deserunt,
+            autem nostrum aliquido.
+          </p>
+        </div>
       )}
     </div>
   );

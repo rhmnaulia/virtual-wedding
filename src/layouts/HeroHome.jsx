@@ -37,7 +37,7 @@ export default function HeroHome() {
                 Undangan Pernikahan
               </span>
             </h1>
-            <h1 className="font-typography text-5xl lg:text-6xl py-4 text-accent">
+            <h1 className="font-typography text-5xl lg:text-6xl py-4 text-accent text-shadow-lg">
               Indra & Fidelia
             </h1>
             <p>26 Februari 2022 | 09:00 WIB (GMT +7)</p>
