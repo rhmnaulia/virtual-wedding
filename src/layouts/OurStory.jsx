@@ -1,10 +1,10 @@
-import CoupleImage from "../../public/static/images/berdua10.JPG";
+import CoupleImage from "../../public/static/images/CoupleImage.jpg";
 import Image from "next/image";
 
 function OurStory() {
   return (
-    <div className="flex justify-center items-center py-16 flex-col our-story-container">
-      <h1 className="text-4xl  font-typography mb-10 font-semibold">
+    <div className="flex justify-center items-center py-16 flex-col text-palewhite our-story-container">
+      <h1 className="text-4xl text-secondary font-typography mb-10 font-semibold">
         Our Story
       </h1>
 
@@ -17,7 +17,7 @@ function OurStory() {
           className="rounded-full"
         />
       </div>
-      <div className="story flex flex-col w-10/12 lg:w-3/4 text-center text-sm md:text-base font-serif text-black ">
+      <div className="story flex flex-col w-10/12 lg:w-3/4 text-center text-sm md:text-base font-serif">
         <p>Berawal dari seorang teman, kami saling berkenalan.</p>
         <p>Malam demi malam telah saling kirim ratusan pesan.</p>
         <p className="mb-1 pb-3 ">

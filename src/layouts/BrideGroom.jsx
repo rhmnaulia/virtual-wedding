@@ -6,10 +6,10 @@ import groom from "../../public/static/images/indra1.JPG";
 
 export default function BrideGroom() {
   return (
-    <div className="bg-indigo-100">
+    <div className="bg-primary text-palewhite">
       <Container>
         <div className="flex flex-col items-center py-16 px-4 ">
-          <h1 className="font-typography text-3xl font-semibold">
+          <h1 className="font-typography text-4xl text-secondary font-semibold">
             Bride & Groom
           </h1>
           <span className="text-center text-sm md:text-base pt-8 font-serif">
@@ -33,7 +33,7 @@ export default function BrideGroom() {
                   className="rounded-full"
                 />
               </div>
-              <h1 className="font-typography pb-1 font-medium text-3xl">
+              <h1 className="font-typography pb-1 text-accent font-medium text-3xl">
                 Indra Suryadi
               </h1>
               <p className="font-serif text-sm md:text-base">
@@ -74,7 +74,7 @@ export default function BrideGroom() {
                   className="rounded-full"
                 />
               </div>
-              <h1 className="font-typography pb-1 font-medium text-3xl">
+              <h1 className="font-typography pb-1 font-medium text-3xl text-accent">
                 Fidelia Andrean
               </h1>
               <p className="font-serif text-sm md:text-base">

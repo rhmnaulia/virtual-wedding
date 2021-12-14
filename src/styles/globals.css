@@ -7,8 +7,8 @@ html {
 }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../../public/static/images/berdua13.JPG");
+  background: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
+    url("../../public/static/images/hero.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -27,26 +27,42 @@ html {
 }
 
 .wishes-box {
-  width: calc(100vw - 2rem);
+  background: linear-gradient(rgba(0, 0, 0, 0.827), rgba(0, 0, 0, 0.8)),
+    url("../../public/static/images/chat-bg.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-/* .our-story-container {
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.9)
-    ),
-    url("../../public/static/images/jembatan.jpg");
+.our-story-container {
+  background: linear-gradient(rgba(14, 13, 13, 0.727), rgba(14, 13, 13, 0.7)),
+    url("../../public/static/images/ourstory.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-} */
+}
 
-/* .thankyou-container {
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-md {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.text-shadow-none {
+  text-shadow: none;
+}
+
+.thankyou-container {
   background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("/static/images/thankyoupic.jpg");
+    url("/static/images/thankyou.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-} */
+}

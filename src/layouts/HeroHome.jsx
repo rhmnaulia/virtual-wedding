@@ -19,8 +19,8 @@ export default function HeroHome() {
     window.addEventListener("scroll", changeBackground);
   });
   return (
-    <div className="relative header bg-fixed overflow-hidden h-screen text-white flex justify-center ">
-      <div className="relative duration-1000 md:pt-6 pb-16 sm:pb-24">
+    <div className="relative header bg-fixed overflow-hidden h-screen text-palewhite flex justify-center ">
+      <div className="relative md:pt-6 pb-16 sm:pb-24">
         {brand && (
           <div className="bg-transparent duration-1000 sticky top-0 md:h-12 z-50 h-16 flex items-center justify-center">
             <div className="md:flex md:space-x-10 md:justify-center justify-center py-3">
@@ -37,17 +37,19 @@ export default function HeroHome() {
                 Undangan Pernikahan
               </span>
             </h1>
-            <h1 className="font-typography text-5xl py-4">Indra & Fidelia</h1>
+            <h1 className="font-typography text-5xl lg:text-6xl py-4 text-accent text-shadow-lg">
+              Indra & Fidelia
+            </h1>
             <p>26 Februari 2022 | 09:00 WIB (GMT +7)</p>
 
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8 hover:cursor-pointer">
+            <div className="mt-5  max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8 hover:cursor-pointer">
               <div className="rounded-md  flex justify-center">
                 <Link
                   href={`https://calendar.google.com/event?action=TEMPLATE&tmeid=NmVjMTgycG5mbjNtdGJiNGt1Z252N2NsZ3MgZTY3YnRjNWg2dnBqMWhpNnU1c3NrMTVvaW9AZw&tmsrc=e67btc5h6vpj1hi6u5ssk15oio%40group.calendar.google.com`}
                 >
                   <a
                     target="_blank"
-                    className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-white bg-white text-base font-medium rounded-md text-black  hover:bg-gray-300 hover:text-black md:py-2 md:text-lg md:px-10"
+                    className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-secondary bg-secondary  text-base font-medium rounded-md text-palewhite  hover:bg-gray-300 hover:text-secondary md:py-2 md:text-lg md:px-10"
                   >
                     <ClockIcon className="h-6 w-6" aria-hidden="true" />{" "}
                     <span className="hover:cursor-pointer text-">
