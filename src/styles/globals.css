@@ -66,3 +66,15 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.slick-slide {
+  padding: 0 15px;
+}
+
+.slick-list {
+  margin: 0 2em;
+}
+
+.slick-initialized {
+  overflow: hidden;
+}

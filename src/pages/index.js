@@ -10,7 +10,9 @@ import BrideGroom from "../layouts/BrideGroom";
 import Guestbook from "../layouts/Guestbook";
 import Layout from "../layouts/Layout";
 import Venue from "../layouts/Venue";
+import ImageGallery from "../components/ImageGallery";
 import RSVP from "../layouts/RSVP";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -39,11 +41,13 @@ const Home = () => {
       <HeroHome />
       <BrideGroom />
       <OurStory />
+      <ImageGallery />
       <Guestbook />
       <Venue />
+      <MusicPlayer />
       {/* <RSVP /> */}
       <Thankyou />
-      <MusicPlayer />
+      <Footer />
     </Layout>
   );
 };
