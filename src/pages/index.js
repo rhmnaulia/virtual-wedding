@@ -13,6 +13,7 @@ import Venue from "../layouts/Venue";
 import ImageGallery from "../components/ImageGallery";
 import RSVP from "../layouts/RSVP";
 import Footer from "../components/Footer";
+import Livestream from "../layouts/Livestream";
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -46,6 +47,7 @@ const Home = () => {
       <Venue />
       <MusicPlayer />
       {/* <RSVP /> */}
+      <Livestream />
       <Thankyou />
       <Footer />
     </Layout>
