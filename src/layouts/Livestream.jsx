@@ -37,10 +37,11 @@ function Livestream() {
             <h3>Virtual Holy Matrimony</h3>
             <h2 className="pb-2">Indra & Fidelia</h2>
             <p>Sabtu , 26 Februari 2022</p>
-            <p className="pb-2">11.00 - Selesai</p>
+            <p className="pb-2">11.00 WIB - Finish</p>
 
-            <p>Gereja Santo Petrus & Paulus Mangga Besar</p>
-            <p className="pb-6">Jl.Raya Mangga Besar 55, Jakarta 11170</p>
+            <p>Gereja ST. Petrus & Paulus</p>
+            <p>Jl.Raya Mangga Besar No. 55</p>
+            <p className="pb-6">Jakarta Barat</p>
           </div>
           <Link href="https://www.instagram.com/">
             <button className="bg-[#DFD3C3] w-1/2 rounded-xl py-2 font-mono text-xl hover:scale-110">
