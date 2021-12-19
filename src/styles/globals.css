@@ -100,25 +100,17 @@ html {
   content: "";
   flex: 1;
 }
-
-.glow:before,
-.glow:after {
-  height: 6px;
-  -webkit-filter: blur(5px);
-  border-radius: 5px;
-}
-.glow:before {
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(132, 132, 129));
-}
-.glow:after {
-  background: linear-gradient(to left, rgb(0, 0, 0), rgb(132, 132, 129));
+.razor:before,
+.razor:after {
+  height: 3px;
+  box-shadow: 0 -5px 0 black, 0 5px 0 black;
+  border-width: 0;
+  margin: 0px 50px;
 }
 .line {
   align-items: center;
-  margin: 1em -1em;
 }
 .line:before,
 .line:after {
   height: 10px;
-  margin: 0 1em 0;
 }
