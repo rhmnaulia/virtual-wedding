@@ -3,7 +3,7 @@ import Link from "next/link";
 function Livestream() {
   return (
     <div className="livestream-container bg-[#16ce5a]  py-5">
-      <h1 className="divider razor line  text-5xl pb-3 mx-10 text-center  font-typography font-bold pt-2">
+      <h1 className="divider razor line  text-5xl pb-3 sm:mx-10 text-center  font-typography font-bold pt-2">
         LiveStream
       </h1>
 
