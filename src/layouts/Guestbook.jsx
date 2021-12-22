@@ -41,6 +41,7 @@ export default function Guestbook() {
                   Full name
                 </label>
                 <input
+                  required
                   onChange={(event) => setName(event.target.value)}
                   type="text"
                   name="name"
@@ -56,6 +57,7 @@ export default function Guestbook() {
                   Message
                 </label>
                 <textarea
+                  required
                   onChange={(event) => setMessage(event.target.value)}
                   id="message"
                   name="message"
@@ -77,7 +79,7 @@ export default function Guestbook() {
           </div>
         </div>
         <div className="wishes-box py-10 lg:col-span-7 lg:py-16  xl:pl-12">
-          <div className="overflow-y-scroll px-6 max-h-96 lg:px-0">
+          <div className="overflow-y-scroll px-6 max-h-96 lg:pl-10 xl:pl-0">
             {guestData &&
               guestData.map((guest, index) => {
                 return (
