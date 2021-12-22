@@ -1,7 +1,7 @@
 import Image from "next/image";
 import gallery2 from "../../public/static/images/ourstory.jpg";
 import gallery3 from "../../public/static/images/thankyou.jpg";
-import gallery4 from "../../public/static/images/hero.JPG";
+import gallery4 from "../../public/static/images/hero.jpg";
 import gallery5 from "../../public/static/images/CoupleImage.JPG";
 import React, { Component } from "react";
 import Slider from "react-slick";
