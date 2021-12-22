@@ -41,6 +41,7 @@ export default function Guestbook() {
                   Full name
                 </label>
                 <input
+                  required
                   onChange={(event) => setName(event.target.value)}
                   type="text"
                   name="name"
@@ -56,6 +57,7 @@ export default function Guestbook() {
                   Message
                 </label>
                 <textarea
+                  required
                   onChange={(event) => setMessage(event.target.value)}
                   id="message"
                   name="message"
