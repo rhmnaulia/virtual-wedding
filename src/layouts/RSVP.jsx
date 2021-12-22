@@ -33,7 +33,7 @@ function RSVP() {
         <div className="absolute inset-y-0 left-0 bg-gray-50" />
       </div>
       <div className="relative lg:grid lg:grid-cols-6 lg:mx-48">
-        <div className="lg:col-span-12 xl:col-span-3 xl:rounded-l-2xl lg:rounded-t-2xl text-center py-16 bg-primary text-palewhite">
+        <div className="lg:col-span-12 xl:col-span-3 xl:rounded-l-2xl xl:rounded-r-none lg:rounded-t-2xl text-center py-16 bg-primary text-palewhite">
           <h1 className="text-3xl font-typography mb-8 font-semibold">
             Hotel Atlet Century Park
           </h1>
@@ -49,7 +49,7 @@ function RSVP() {
             ></iframe>
           </div>
         </div>
-        <div className="lg:col-span-12 py-16  xl:col-span-3 xl:rounded-l-2xl lg:rounded-b-2xl lg:border px-auto">
+        <div className="lg:col-span-12 py-16  xl:col-span-3 xl:rounded-r-2xl xl:rounded-l-none lg:rounded-b-2xl lg:border px-auto">
           <div className="mx-auto">
             <h1 className="text-3xl mx-auto lg:w-96 w-full text-center relative font-typography mb-8 font-semibold">
               RSVP
