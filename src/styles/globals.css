@@ -66,3 +66,47 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.livestream-container {
+  background: linear-gradient(rgba(14, 13, 13, 0.727), rgba(14, 13, 13, 0.7)),
+    url("../../public/static/images/thankyou.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.slick-slide {
+  padding: 0 15px;
+}
+
+.slick-list {
+  margin: 0 2em;
+}
+
+.slick-initialized {
+  overflow: hidden;
+}
+
+.divider {
+  display: flex;
+}
+.divider:before,
+.divider:after {
+  content: "";
+  flex: 1;
+}
+.razor:before,
+.razor:after {
+  height: 3px;
+  box-shadow: 0 -5px 0 #d9cab3, 0 5px 0 #d9cab3;
+  border-width: 0;
+  margin: 0px 50px;
+}
+.line {
+  align-items: center;
+}
+.line:before,
+.line:after {
+  height: 10px;
+}
