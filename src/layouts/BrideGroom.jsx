@@ -37,7 +37,7 @@ export default function BrideGroom() {
                 Indra Suryadi
               </h1>
               <p className="font-serif text-sm md:text-base">
-                Putra dari Bapak Ang Bun Kim & Ibu Suryani
+                Son of Mr.Bunnady & Mrs.Sumarni
               </p>
               <span className="flex mt-6 flex-row justify-center text-[#bc2a8d] text-sm md:text-base">
                 <svg
@@ -78,7 +78,7 @@ export default function BrideGroom() {
                 Fidelia Andrean
               </h1>
               <p className="font-serif text-sm md:text-base">
-                Putri dari Bapak Andreas Paulus & Ibu Suzan
+                Second Daughter of Mr.Tjin Ay Fha & Mrs.Suzan Siu Lany
               </p>
               <span className="flex mt-6 flex-row justify-center text-[#bc2a8d] text-sm md:text-base">
                 <svg

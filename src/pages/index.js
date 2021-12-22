@@ -6,11 +6,14 @@ import Navbar from "../components/Navbar";
 import OurStory from "../layouts/OurStory";
 import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
+import ImageGallery from "../components/ImageGallery";
 import BrideGroom from "../layouts/BrideGroom";
 import Guestbook from "../layouts/Guestbook";
 import Layout from "../layouts/Layout";
 import Venue from "../layouts/Venue";
 import RSVP from "../layouts/RSVP";
+import Footer from "../components/Footer";
+import Livestream from "../layouts/Livestream";
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -39,10 +42,15 @@ const Home = () => {
       <HeroHome />
       <BrideGroom />
       <OurStory />
-      <Guestbook />
+      <ImageGallery />
       <Venue />
       <RSVP />
+      <Guestbook />
+      {/* Egift Disini  */}
+      {/* Protokol */}
+      <Livestream />
       <Thankyou />
+      <Footer />
       <MusicPlayer />
     </Layout>
   );
