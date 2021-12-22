@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { addRSVP } from "../helpers/supabase";
 import Select from "../components/Select";
+import Modal from "../components/Modal";
 
 const options = [
   { id: 1, value: "Hadir" },
@@ -8,6 +9,7 @@ const options = [
 ];
 
 function RSVP() {
+  const [showModal, setShowModal] = useState(false);
   const [name, setName] = useState("");
   const [telephone, setTelephone] = useState("");
   const [totalGuest, setTotalGuest] = useState(0);
@@ -25,6 +27,7 @@ function RSVP() {
   const handleSubmit = (e) => {
     e.preventDefault();
     addRSVP(name, telephone, confirmation.value, totalGuest);
+    setShowModal(true);
     resetForm();
   };
   return (
@@ -66,12 +69,12 @@ function RSVP() {
                   Full name
                 </label>
                 <input
+                  autoComplete="off"
                   required
                   onChange={(event) => setName(event.target.value)}
                   type="text"
                   name="name"
                   id="name"
-                  autoComplete="name"
                   className="block shadow-sm lg:w-96 w-full md:w-[500px] py-3 px-4 placeholder-gray-500 focus:ring-accent focus:border-accent border-gray-300 rounded-md"
                   placeholder="Full name"
                 />
@@ -81,12 +84,12 @@ function RSVP() {
                   Telephone Number
                 </label>
                 <input
+                  autoComplete="off"
                   required
                   onChange={(event) => setTelephone(event.target.value)}
                   type="number"
                   name="telephone"
                   id="telephone"
-                  autoComplete="telephone"
                   className="block shadow-sm lg:w-96 w-full md:w-[500px] py-3 px-4 placeholder-gray-500 focus:ring-accent focus:border-accent border-gray-300 rounded-md"
                   placeholder="Telephone number"
                 />
@@ -96,12 +99,12 @@ function RSVP() {
                   Total guest
                 </label>
                 <input
+                  autoComplete="off"
                   required
                   onChange={(event) => setTotalGuest(event.target.value)}
                   type="number"
                   name="total-guest"
                   id="total-guest"
-                  autoComplete="total-guest"
                   className="block shadow-sm lg:w-96 w-full md:w-[500px] py-3 px-4 placeholder-gray-500 focus:ring-accent focus:border-accent border-gray-300 rounded-md"
                   placeholder="Total Guest"
                 />
@@ -117,7 +120,7 @@ function RSVP() {
               <div className="mx-auto lg:w-96 w-full md:w-[500px]">
                 <button
                   type="submit"
-                  className="inline-flex lg:w-96 w-full md:w-[500px] justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex lg:w-96 w-full md:w-[500px] justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
                 >
                   Submit
                 </button>
@@ -126,6 +129,12 @@ function RSVP() {
           </div>
         </div>
       </div>
+      <Modal
+        open={showModal}
+        setOpen={setShowModal}
+        title="RSVP has been sent!"
+        description={"RSVP has been sent.Thank you for your participation."}
+      />
     </div>
   );
 }

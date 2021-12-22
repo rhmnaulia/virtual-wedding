@@ -1,14 +1,27 @@
 import { useEffect, useState } from "react";
 import { getGuestData, sendMessage } from "../helpers/supabase";
+import Modal from "../components/Modal";
 
 export default function Guestbook() {
   const [guestData, setGuestData] = useState([]);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     sendMessage({ name, message });
+    setShowModal(true);
+    resetForm();
+  };
+
+  const resetForm = () => {
+    Array.from(document.querySelectorAll("input")).forEach(
+      (input) => (input.value = "")
+    );
+    Array.from(document.querySelectorAll("textarea")).forEach(
+      (input) => (input.value = "")
+    );
     setName("");
     setMessage("");
   };
@@ -46,7 +59,7 @@ export default function Guestbook() {
                   type="text"
                   name="name"
                   id="name"
-                  autoComplete="name"
+                  autoComplete="off"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-accent focus:border-accent border-gray-300 rounded-md"
                   placeholder="Full name"
                 />
@@ -57,20 +70,21 @@ export default function Guestbook() {
                   Message
                 </label>
                 <textarea
+                  autoComplete="off"
                   required
                   onChange={(event) => setMessage(event.target.value)}
                   id="message"
                   name="message"
                   rows={4}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-accent focus:border-accent border-gray-300 rounded-md"
-                  placeholder="Write your wishes"
+                  placeholder="Write your message here"
                   defaultValue={""}
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
                 >
                   Submit
                 </button>
@@ -105,6 +119,15 @@ export default function Guestbook() {
           </div>
         </div>
       </div>
+
+      <Modal
+        open={showModal}
+        setOpen={setShowModal}
+        title="Message has been sent!"
+        description={
+          "Thank you for the wishes and prayers. Your message should appear in message box shortly"
+        }
+      />
     </div>
   );
 }
