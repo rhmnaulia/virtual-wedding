@@ -41,7 +41,7 @@ const Home = () => {
       <OurStory />
       <Guestbook />
       <Venue />
-      {/* <RSVP /> */}
+      <RSVP />
       <Thankyou />
       <MusicPlayer />
     </Layout>

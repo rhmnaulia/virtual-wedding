@@ -4,7 +4,7 @@ import Logo from "../../public/static/images/logo-white.png";
 
 function Thankyou() {
   return (
-    <div className="text-center  text-palewhite h-screen bg-opacity-100 flex flex-col justify-center items-center thankyou-container">
+    <div className="text-center text-palewhite bg-opacity-100 flex flex-col justify-center items-center thankyou-container py-16">
       <Container>
         <div className="px-2">
           <h1 className="text-5xl text-secondary font-typography mb-10 font-semibold">

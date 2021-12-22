@@ -41,14 +41,13 @@ export const sendMessage = async ({ name, message }) => {
   }
 };
 
-export const addRSVP = async ({ name, email, attending }) => {
+export const addRSVP = async (name, telephone, confirmation, total_guest) => {
   try {
-    setLoading(true);
-
     const addGuest = {
       name,
-      email,
-      attending,
+      telephone,
+      confirmation,
+      total_guest,
       created_at: new Date(),
     };
 
@@ -62,6 +61,5 @@ export const addRSVP = async ({ name, email, attending }) => {
   } catch (error) {
     alert(error.message);
   } finally {
-    setLoading(false);
   }
 };
