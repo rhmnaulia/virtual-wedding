@@ -14,6 +14,7 @@ import Venue from "../layouts/Venue";
 import RSVP from "../layouts/RSVP";
 import Footer from "../components/Footer";
 import Livestream from "../layouts/Livestream";
+import Gift from "../layouts/Gift";
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -46,7 +47,7 @@ const Home = () => {
       <Venue />
       <RSVP />
       <Guestbook />
-      {/* Egift Disini  */}
+      <Gift />
       {/* Protokol */}
       <Livestream />
       <Thankyou />
