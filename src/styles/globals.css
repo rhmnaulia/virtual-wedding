@@ -124,11 +124,7 @@ html {
 .razor:before,
 .razor:after {
   height: 3px;
-<<<<<<< HEAD
-  box-shadow: 0 -5px 0 black, 0 5px 0 black;
-=======
   box-shadow: 0 -5px 0 #d9cab3, 0 5px 0 #d9cab3;
->>>>>>> ab17a3b2d80791bd00800514c07483e1aa873e58
   border-width: 0;
   margin: 0px 50px;
 }
