@@ -17,54 +17,32 @@ function OurStory() {
           className="rounded-full"
         />
       </div>
-      <div className="story flex flex-col w-10/12 lg:w-3/4 text-center text-sm md:text-base font-serif">
-        <p>Berawal dari seorang teman, kami saling berkenalan.</p>
-        <p>Malam demi malam telah saling kirim ratusan pesan.</p>
-        <p className="mb-1 pb-3 ">
-          Bukan jadi halangan walaupun terjarak ribuan kilometer dan pulau yang
-          berjauhan.
-        </p>
-
-        {/* second paragraph */}
-
+      <div className="story flex flex-col w-10/12 lg:w-3/4 text-center text-sm md:text-lg md:px-40 font-serif">
         <p>
-          Hingga pada suatu titik kami memantapkan hati untuk saling memantaskan
-          diri.
+          We knew each other first as a colleague in the same Catholic youth
+          community.
+        </p>
+        <p className="mb-1 pb-3 ">
+          {" "}
+          We never expect that we could found each other in the class where we
+          barely talked to each other, after class or before, let alone we
+          choose to spend the rest of our life together.{" "}
+        </p>
+        <p className="mb-1 pb-3 ">
+          We have a lot of differences in personality, way of thinking, and
+          sometimes in the way we see things in life but we believe those
+          enriched our relationship.
         </p>
         <p>
-          Terujar doa yang tak henti agar kami yakin untuk saling melengkapi.
+          {" "}
+          Indra is the type of person who is reserved, calm, and sometimes
+          complicated while Fidel is the type of person who is seemly easy to
+          engage with, fun-loving, lively and energetic.
         </p>
-        <p>Allah sungguh sangat baik hati.</p>
-        <p>Menuntun hati kami.</p>
-        <p className="mb-1 pb-3 ">
-          Yang awalnya penuh teka teki, hingga terlihat jelas jalan yang harus
-          kami lalui.
-        </p>
-
-        {/* third paragraph */}
-
-        <p>Dan ketika khitbah terucap di depan kedua orang tua,</p>
-        <p>Raut wajah kami terpancar jelas rasa haru bercampur bahagia.</p>
-        <p>Terasa begitu sempurna, Allah menjawab semua doa.</p>
-        <p className="mb-1 pb-3 ">
-          Sujud syukur kami berdua, untuk semua rasa kantuk yang kami korbankan
-          di setiap malam pukul tiga.
-        </p>
-
-        {/* fourth paragraph */}
-
-        <p>Begitu singkat proses kami sampai begitu dekat.</p>
-        <p>Namun ketika jodoh sudah Allah takdirkan untuk mendekat,</p>
-        <p className="mb-1 pb-3 ">
-          takkan pernah datang lebih cepat walau sesaat, takkan pernah datang
-          terlambat walau harus seabad.
-        </p>
-
-        {/* fifth paragraph */}
-
         <p>
-          Terimakasih telah saling sabar menunggu hingga hari kita bertemu dan
-          terimakasih untuk saling memilih tanpa ragu.
+          Although there are many differences, we both managed to bare
+          ourselves, developing and commiting to become a better partner for
+          each other, for the rest of our life.
         </p>
       </div>
     </div>

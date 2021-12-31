@@ -16,7 +16,7 @@ function Thankyou() {
           <div className="w-40 md:w-36 mt-10 max-w-md mx-auto sm:flex sm:justify-center justify-center">
             <Image src={Logo} alt="I & F Wedding" />
           </div>
-          <h1 className="mt-10 text-2xl text-gray-300">#FINDELOVE</h1>
+          <h1 className="mt-10 text-2xl text-gray-300">#LockedINforDEL</h1>
         </div>
       </Container>
     </div>

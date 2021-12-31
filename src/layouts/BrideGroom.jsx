@@ -13,13 +13,8 @@ export default function BrideGroom() {
             Bride & Groom
           </h1>
           <span className="text-center text-sm md:text-base pt-8 font-serif">
-            <p className="pb-4">Lorem ipsum dolor si amet</p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptates atque blanditiis ducimus est accusamus error adipisci
-              maxime.Voluptates atque blanditiis ducimus est accusamus error
-              adipisci maxime
-            </p>
+            <p className="pb-4"> Philippians 1: 3</p>
+            <p>I thank my God every time I remember you.</p>
           </span>
 
           <div className="flex lg:flex-row flex-col  lg:gap-x-52 pt-12">
