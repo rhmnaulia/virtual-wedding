@@ -2,29 +2,29 @@ import Link from "next/link";
 
 function Livestream() {
   return (
-    <div className="livestream-container bg-[#16ce5a]  py-5">
-      <h1 className="divider razor line  text-5xl pb-3 sm:mx-10 text-center  font-typography font-bold pt-2">
+    <div className="livestream-container text-palewhite py-16">
+      <h1 className=" text-secondary font-semibold  text-5xl pb-3 sm:mx-10 text-center  font-typography pt-2">
         LiveStream
       </h1>
 
-      <h1 className="font-typography text-center sm:text-left mt-5 sm:text-4xl sm:pl-7 text-3xl pl-2  ">
-        Youtube Live
-      </h1>
-      <div className="flex sm:flex-row flex-col justify-center">
-        <div className="flex flex-col items-center  sm:pl-2 w-full sm:w-1/2 video-container mb-5">
+      <div className="pt-16 flex sm:flex-row flex-col justify-center">
+        <div className="flex flex-col items-center pb-12 lg:pb-0  sm:pl-2 w-full sm:w-1/2 video-container mb-5">
+          <h1 className="font-serif font-semibold text-3xl sm:text-4xl">
+            Youtube Live
+          </h1>
           <iframe
             className="w-full h-56 sm:h-[30rem] sm:w-full  p-7"
             src="https://www.youtube.com/embed/tgbNymZ7vqY"
           ></iframe>
           <Link href="https://www.instagram.com/">
-            <button className="bg-[#DFD3C3] w-1/2 rounded-xl py-2 font-mono text-xl hover:scale-110">
+            <button className="bg-secondary w-1/2 rounded-md py-2  text-lg hover:scale-110">
               Join Youtube
             </button>
           </Link>
         </div>
 
         <div className="flex flex-col w-full sm:w-1/2 items-center  description-container">
-          <h1 className="font-typography text-3xl sm:text-6xl ">
+          <h1 className="font-serif font-semibold text-3xl sm:text-4xl ">
             Zoom Meeting
           </h1>
           <p className="text-center pt-7 pb-5  px-4 sm:text-lg sm:pt-9 sm:px-16  text-sm font-serif">
@@ -44,7 +44,7 @@ function Livestream() {
             <p className="pb-6">Jakarta Barat</p>
           </div>
           <Link href="https://www.instagram.com/">
-            <button className="bg-[#DFD3C3] w-1/2 rounded-xl py-2 font-mono text-xl hover:scale-110">
+            <button className="bg-secondary w-1/2 rounded-md py-2 text-lg hover:scale-110">
               Join Zoom
             </button>
           </Link>

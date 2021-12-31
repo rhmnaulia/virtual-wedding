@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import OurStory from "../layouts/OurStory";
 import Landing from "../layouts/Landing";
 import Thankyou from "../layouts/Thankyou";
+import ImageGallery from "../components/ImageGallery";
 import BrideGroom from "../layouts/BrideGroom";
 import Guestbook from "../layouts/Guestbook";
 import Layout from "../layouts/Layout";
@@ -14,6 +15,10 @@ import ImageGallery from "../components/ImageGallery";
 import RSVP from "../layouts/RSVP";
 import Footer from "../components/Footer";
 import Livestream from "../layouts/Livestream";
+<<<<<<< HEAD
+=======
+import Gift from "../layouts/Gift";
+>>>>>>> ab17a3b2d80791bd00800514c07483e1aa873e58
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -43,13 +48,24 @@ const Home = () => {
       <BrideGroom />
       <OurStory />
       <ImageGallery />
+<<<<<<< HEAD
       <Guestbook />
+=======
+>>>>>>> ab17a3b2d80791bd00800514c07483e1aa873e58
       <Venue />
       <MusicPlayer />
       <Livestream />
       <RSVP />
+      <Guestbook />
+      <Gift />
+      {/* Protokol */}
+      <Livestream />
       <Thankyou />
       <Footer />
+<<<<<<< HEAD
+=======
+      <MusicPlayer />
+>>>>>>> ab17a3b2d80791bd00800514c07483e1aa873e58
     </Layout>
   );
 };

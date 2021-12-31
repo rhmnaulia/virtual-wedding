@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="bg-palewhite flex  items-center justify-center ">
-        <div className="flex flex-col sm:flex-row   justify-center items-center my-3 space-x-2  text-gray-500 text-xs sm:text-sm dark:text-gray-400">
+        <div className="flex flex-col sm:flex-row justify-center items-center my-3 space-x-2  text-gray-500 text-xs sm:text-sm dark:text-gray-400">
           <p className="font-sans">
             We help you to create your sweet ending to a new beginning
           </p>

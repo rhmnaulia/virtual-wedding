@@ -4,10 +4,10 @@ const Pause = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-12 w-12"
-      fill="none"
+      className="h-11 w-11 rounded-full bg-secondary"
+      fill="#79a090"
       viewBox="0 0 24 24"
-      stroke="pink"
+      stroke="#D9CAB3"
     >
       <path
         strokeLinecap="round"
@@ -23,10 +23,10 @@ const Play = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-12 w-12"
+      className="h-11 w-11 bg-secondary rounded-full"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="pink"
+      stroke="#D9CAB3"
     >
       <path
         strokeLinecap="round"
