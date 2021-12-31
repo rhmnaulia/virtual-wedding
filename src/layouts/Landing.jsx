@@ -13,7 +13,8 @@ export default function Landing({ btnAction }) {
           <div className="text-center">
             <h1 className="text-md tracking-tight lg:text-2xl">
               <span className="block text-palewhite xl:inline font-serif tracking-wider">
-                Kami mengundang Anda untuk bergabung di hari bahagia kami
+                With pride and joy, we invite you to be a part of our special
+                day
               </span>
             </h1>
             <div className="w-44 md:w-52 mt-7 max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8">
