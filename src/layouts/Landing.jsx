@@ -7,9 +7,9 @@ export default function Landing({ btnAction }) {
   const router = useRouter();
 
   return (
-    <div className="relative header bg-cover overflow-hidden h-screen text-white flex justify-center items-center">
+    <div className="relative landing bg-cover overflow-hidden h-screen text-white flex justify-center items-center">
       <div className="relative pt-6 pb-16 sm:pb-24">
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+        <main className="mt-16 mx-auto max-w-7xl px-16 sm:mt-24">
           <div className="text-center">
             <h1 className="text-md tracking-tight lg:text-2xl">
               <span className="block text-palewhite xl:inline font-serif tracking-wider">

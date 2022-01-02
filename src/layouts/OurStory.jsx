@@ -1,4 +1,4 @@
-import CoupleImage from "../../public/static/images/CoupleImage.jpg";
+import CoupleImage from "../../public/static/images/our-story.jpg";
 import Image from "next/image";
 
 function OurStory() {

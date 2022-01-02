@@ -8,15 +8,18 @@ function Livestream() {
       </h1>
 
       <div className="pt-16 flex sm:flex-row flex-col justify-center">
-        <div className="flex flex-col items-center pb-12 lg:pb-0  sm:pl-2 w-full sm:w-1/2 video-container mb-5">
+        <div className="flex flex-col items-center pb-12 lg:pb-0 w-full sm:w-1/2 video-container mb-5">
           <h1 className="font-serif font-semibold text-3xl sm:text-4xl">
             Youtube Live
           </h1>
           <iframe
-            className="w-full h-56 sm:h-[30rem] sm:w-full  p-7"
+            className="relative m-auto lg:w-[30rem] sm:w-[30rem] xs:w-[80px] my-10 md:w-[30rem] rounded-md shadow-lg"
             src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            height="300"
+            style={{ border: 0 }}
+            loading="lazy"
           ></iframe>
-          <Link href="https://www.instagram.com/">
+          <Link href="https://www.youtube.com/embed/tgbNymZ7vqY">
             <button className="bg-secondary w-1/2 rounded-md py-2  text-lg hover:scale-110">
               Join Youtube
             </button>
@@ -27,7 +30,7 @@ function Livestream() {
           <h1 className="font-serif font-semibold text-3xl sm:text-4xl ">
             Zoom Meeting
           </h1>
-          <p className="text-center pt-7 pb-5  px-4 sm:text-lg sm:pt-9 sm:px-16  text-sm font-serif">
+          <p className="text-justify pt-7 pb-5  px-4 sm:text-lg sm:pt-9 sm:px-32  text-sm font-serif">
             Dikarenakan situasi pandemi Covid-19 dan demi keamanan seluruh tamu
             , Acara pemberkatan akan dilakukan secara virtual melalui platform
             zoom. Silahkan bergabung dengan menekan tombol berikut. Terima
