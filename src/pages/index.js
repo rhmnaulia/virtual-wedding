@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import HeroHome from "../layouts/HeroHome";
 import MusicPlayer from "../components/MusicPlayer.jsx";
@@ -15,6 +15,7 @@ import RSVP from "../layouts/RSVP";
 import Footer from "../components/Footer";
 import Livestream from "../layouts/Livestream";
 import Gift from "../layouts/Gift";
+import getWeddingInfo from "../helpers/getWeddingInfo";
 
 const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
@@ -22,6 +23,11 @@ const Home = () => {
   const handleClick = () => {
     setIsLanding(false);
   };
+
+  useEffect(() => {
+    getWeddingInfo();
+    console.log("getWeddingInfo", getWeddingInfo());
+  }, []);
 
   if (isLanding) {
     return (
@@ -48,7 +54,6 @@ const Home = () => {
       <RSVP />
       <Guestbook />
       <Gift />
-      {/* Protokol */}
       <Livestream />
       <Thankyou />
       <Footer />
