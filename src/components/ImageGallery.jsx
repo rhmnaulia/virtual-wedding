@@ -10,7 +10,6 @@ export default function ImageGallery() {
     axios
       .get(`https://karuna-wedding.herokuapp.com/api/image-gallery?populate=*`)
       .then((res) => {
-        console.log(res.data.data.attributes.img.data);
         setImages(res.data.data.attributes.img.data);
       })
       .catch((error) => {
