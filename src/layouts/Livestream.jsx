@@ -28,8 +28,8 @@ function Livestream() {
             Zoom Meeting
           </h1>
           <p className="text-center pt-7 pb-5  px-4 sm:text-lg sm:pt-9 sm:px-16  text-sm font-serif">
-            Dikarenakan situasi pandemi Covid-19 dan demi keamanan seluruh tamu
-            , Acara pemberkatan akan dilakukan secara virtual melalui platform
+            Dikarenakan situasi pandemi Covid-19 dan demi keamanan seluruh tamu,
+            Acara pemberkatan akan dilakukan secara virtual melalui platform
             zoom. Silahkan bergabung dengan menekan tombol berikut. Terima
             Kasih.
           </p>
