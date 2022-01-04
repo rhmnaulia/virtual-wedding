@@ -67,7 +67,7 @@ export default function Guestbook() {
                   onChange={(event) => setName(event.target.value)}
                   type="text"
                   name="name"
-                  maxLength="50"
+                  maxLength="30"
                   id="name"
                   autoComplete="off"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-accent focus:border-accent border-gray-300 rounded-md"
@@ -81,7 +81,7 @@ export default function Guestbook() {
                 </label>
                 <textarea
                   autoComplete="off"
-                  maxLength="300"
+                  maxLength="150"
                   required
                   onChange={(event) => setMessage(event.target.value)}
                   id="message"
