@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
 import Head from "next/head";
 import HeroHome from "../layouts/HeroHome";
 import MusicPlayer from "../components/MusicPlayer.jsx";
@@ -17,7 +16,7 @@ import Footer from "../components/Footer";
 import Livestream from "../layouts/Livestream";
 import Gift from "../layouts/Gift";
 
-const Home = ({ weddingInfo }) => {
+const Home = () => {
   const [isLanding, setIsLanding] = useState(true);
 
   const handleClick = () => {
@@ -46,8 +45,6 @@ const Home = ({ weddingInfo }) => {
       <BrideGroom />
       <OurStory />
       <ImageGallery />
-      <Venue />
-      <RSVP />
       <Guestbook />
       <Gift />
       <Livestream />
@@ -59,13 +56,3 @@ const Home = ({ weddingInfo }) => {
 };
 
 export default Home;
-
-export async function getServerSideProps(context) {
-  const response = await axios.get(
-    `https://karuna-wedding.herokuapp.com/api/wedding-information`
-  );
-
-  return {
-    props: { weddingInfo: response.data.data.attributes }, // will be passed to the page component as props
-  };
-}
