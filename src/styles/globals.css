@@ -18,6 +18,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
+    url("../../public/static/images/hero.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
+      url("../../public/static/images/landing.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.427), rgba(0, 0, 0, 0.4)),
     url("../../public/static/images/hero.jpg");

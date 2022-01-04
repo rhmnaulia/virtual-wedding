@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-        <title>FINDELOVE</title>
+        <title>LOCKEDINFORDEL</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="apple-touch-icon"

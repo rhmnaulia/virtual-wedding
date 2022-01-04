@@ -7,9 +7,11 @@ export default function Guestbook() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [onSubmitStatus, setOnSubmitStatus] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setOnSubmitStatus(true);
     sendMessage({ name, message });
     setShowModal(true);
     resetForm();
@@ -30,7 +32,14 @@ export default function Guestbook() {
     getGuestData().then((data) => {
       setGuestData(data);
     });
-  }, [guestData]);
+  }, []);
+
+  useEffect(() => {
+    getGuestData().then((data) => {
+      setGuestData(data);
+      setOnSubmitStatus(false);
+    });
+  }, [onSubmitStatus]);
 
   return (
     <div className="relative">
