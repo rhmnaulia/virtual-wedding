@@ -1,22 +1,55 @@
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import axios from "axios";
+import img_1 from "../../public/static/images/carousel/img-1.jpeg";
+import img_2 from "../../public/static/images/carousel/img-2.jpg";
+import img_3 from "../../public/static/images/carousel/img-3.jpeg";
+import img_4 from "../../public/static/images/carousel/img-4.jpg";
+import img_5 from "../../public/static/images/carousel/img-5.jpg";
+import img_6 from "../../public/static/images/carousel/img-6.jpg";
 
 export default function ImageGallery() {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`https://karuna-wedding.herokuapp.com/api/image-gallery?populate=*`)
-      .then((res) => {
-        setImages(res.data.data.attributes.img.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
+  const images = [
+    {
+      name: "our moments",
+      src: img_1,
+    },
+    {
+      name: "our moments",
+      src: img_2,
+    },
+    {
+      name: "our moments",
+      src: img_3,
+    },
+    {
+      name: "our moments",
+      src: img_4,
+    },
+    {
+      name: "our moments",
+      src: img_5,
+    },
+    {
+      name: "our moments",
+      src: img_6,
+    },
+    {
+      name: "our moments",
+      src: img_2,
+    },
+    {
+      name: "our moments",
+      src: img_3,
+    },
+    {
+      name: "our moments",
+      src: img_4,
+    },
+    {
+      name: "our moments",
+      src: img_5,
+    },
+  ];
   const settings = {
     dots: false,
     infinite: true,
@@ -63,14 +96,11 @@ export default function ImageGallery() {
           Our Moments
         </h1>
         <Slider {...settings}>
-          {images.map((image) => {
+          {images.map((image, index) => {
             return (
-              <div
-                key={image.id}
-                className=" mb-4  h-64 w-64  mx-auto relative"
-              >
+              <div key={index} className=" mb-4  h-64 w-64  mx-auto relative">
                 <Image
-                  src={image.attributes.url}
+                  src={image.src}
                   objectFit="cover"
                   layout="fill"
                   className=" rounded-xl   "
