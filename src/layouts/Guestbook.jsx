@@ -104,7 +104,7 @@ export default function Guestbook() {
           </div>
         </div>
         <div className="wishes-box py-10 lg:col-span-7 lg:py-16  xl:pl-12">
-          <div className="overflow-y-scroll px-6 max-h-96 lg:pl-10 xl:pl-0">
+          <div className="overflow-y-scroll px-6 h-96  lg:pl-10 xl:pl-0">
             {guestData &&
               guestData.map((guest, index) => {
                 return (
@@ -116,8 +116,8 @@ export default function Guestbook() {
                         alt=""
                       />
                     </div>
-                    <div className="ml-4">
-                      <div className="text-sm leading-5 font-medium text-accent">
+                    <div className="ml-4 sm:w-72 md:w-3/4 lg:w-3/4">
+                      <div className="text-sm leading-5 font-medium text-accent break-all">
                         {guest.name}
                       </div>
                       <div className="mt-0 text-sm leading-5 text-palewhite break-all">
