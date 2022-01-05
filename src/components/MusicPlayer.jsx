@@ -46,7 +46,7 @@ const Play = () => {
 
 export default function MusicPlayer() {
   const [audio] = useState(
-    typeof Audio !== "undefined" && new Audio("/music/OnlyYou.mp3")
+    typeof Audio !== "undefined" && new Audio("/music/oneday.mp3")
   );
   const [isPlaying, setIsPlaying] = useState(true);
 

@@ -11,7 +11,7 @@ function Thankyou() {
             Thank You
           </h1>
           <p className="my-5 md:my-2 text-base md:text-xl font-serif">
-            Thank you for join us on our Live Wedding
+            Thank you for join us !
           </p>
 
           <div className="w-40 md:w-36 mt-10 max-w-md mx-auto sm:flex sm:justify-center justify-center">
