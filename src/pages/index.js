@@ -48,14 +48,14 @@ const Home = ({ weddingInfo }) => {
       <OurStory />
       <ImageGallery />
       {/* <Venue /> */}
-      <MusicPlayer />
-      <Livestream />
+      {/* <Livestream /> */}
       {/* <RSVP /> */}
       <Guestbook />
       <Gift />
       <Livestream />
       <Thankyou />
       <Footer />
+      <MusicPlayer />
     </Layout>
   );
 };

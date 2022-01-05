@@ -24,7 +24,7 @@ export default function Footer() {
           <Heart />
           <p className="font-sans">by</p>
 
-          <p className="font-sans font-semibold">
+          <p className="font-serif font-semibold">
             Karuna Wedding Planner {`© ${new Date().getFullYear()}`}
           </p>
         </div>

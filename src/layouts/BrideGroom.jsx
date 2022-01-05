@@ -13,7 +13,7 @@ export default function BrideGroom() {
             Bride & Groom
           </h1>
           <span className="text-center text-sm md:text-base pt-8 font-serif">
-            <p className="pb-4"> Philippians 1: 3</p>
+            <p className="pb-4"> Philippians 1 : 3</p>
             <p>I thank my God every time I remember you.</p>
           </span>
 
