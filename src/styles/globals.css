@@ -46,7 +46,7 @@ html {
 
 .wishes-box {
   background: linear-gradient(rgba(61, 61, 61, 0.827), rgba(71, 71, 71, 0.8)),
-    url("../../public/static/images/berdua7.JPG");
+    url("../../public/static/images/chat-bg.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
