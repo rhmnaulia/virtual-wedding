@@ -5,7 +5,7 @@ const Pause = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-11 w-11 rounded-full bg-secondary"
-      fill="#79a090"
+      fill="none"
       viewBox="0 0 24 24"
       stroke="#D9CAB3"
     >
