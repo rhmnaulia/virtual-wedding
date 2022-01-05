@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#212121",
-        secondary: "#79a090",
+        primary: "#5C6D7E",
+        secondary: "#F9F4E5",
         accent: "#D9CAB3",
         palewhite: "#F6F6F6",
+        choco: "#7C8996",
+        button: "#000",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

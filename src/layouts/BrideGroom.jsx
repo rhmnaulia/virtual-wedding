@@ -34,14 +34,14 @@ export default function BrideGroom() {
               <p className="font-serif text-sm md:text-base">
                 Son of Mr. Bunnady & Mrs. Sumarni
               </p>
-              <span className="flex mt-6 flex-row justify-center text-[#bc2a8d] text-sm md:text-base">
+              <span className="flex mt-6 flex-row justify-center text-[#C7AE86] text-sm  md:text-base">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#bc2a8d"
+                  stroke="#C7AE86"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -75,14 +75,14 @@ export default function BrideGroom() {
               <p className="font-serif text-sm md:text-base">
                 Second Daughter of Mr. Tjin Ay Fha & Mrs. Suzan Siu Lany
               </p>
-              <span className="flex mt-6 flex-row justify-center text-[#bc2a8d] text-sm md:text-base">
+              <span className="flex mt-6 flex-row justify-center text-[#C7AE86] text-sm md:text-base">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#bc2a8d"
+                  stroke="#C7AE86"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

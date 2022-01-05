@@ -8,7 +8,7 @@ const Gift = () => {
     saveAs("/static/images/Qris.jpg", "QRIS-Indra_Suryadi.jpg");
   };
   return (
-    <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div className="container bg-choco mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <div className="flex flex-col justify-center text-center">
         <h1 className="text-5xl font-typography font-semibold text-secondary mb-8">
           Gift
@@ -25,7 +25,7 @@ const Gift = () => {
 
         <button
           onClick={saveFile}
-          className="inline-flex justify-center lg:w-56 w-36 mx-auto mt-6 py-2 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+          className="inline-flex justify-center lg:w-56 w-36 mx-auto mt-6 py-2 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-button bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
         >
           Download
         </button>
