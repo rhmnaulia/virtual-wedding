@@ -8,7 +8,7 @@ const Gift = () => {
     saveAs("/static/images/Qris.jpg", "QRIS-Indra_Suryadi.jpg");
   };
   return (
-    <div className="container bg-choco mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div className="container bg-palewhite mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <div className="flex flex-col justify-center text-center">
         <h1 className="text-5xl font-typography font-semibold text-secondary mb-8">
           Gift
