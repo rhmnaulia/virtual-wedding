@@ -74,7 +74,7 @@ export default function ImageGallery() {
     ],
   };
   return (
-    <div className="bg-choco pt-12 pb-8 lg:pb-0">
+    <div className="bg-palewhite pt-12 pb-8 lg:pb-0">
       <div className="h-96 lg:h-[27rem]">
         <h1 className="text-4xl text-secondary font-semibold text-center pb-8 font-typography">
           Our Moments
