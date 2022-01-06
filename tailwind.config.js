@@ -11,7 +11,7 @@ module.exports = {
         accent: "#D9CAB3",
         palewhite: "#F6F6F6",
         choco: "#7C8996",
-        button: "#000",
+        button: "#fff",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

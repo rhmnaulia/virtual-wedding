@@ -20,14 +20,14 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="bg-secondary  text-black flex  items-center justify-center py-3">
+      <div className="bg-secondary  text-white flex  items-center justify-center py-3">
         <div className="flex flex-row justify-center items-center  space-x-2  text-xs sm:text-sm dark:text-gray-400">
           <p className="font-sans">Made with</p>
           <Heart />
           <p className="font-sans">by</p>
           <Link href="https://www.instagram.com/karunawedding/">
             <a target="_blank" rel="noopener noreferrer">
-              <p className="font-serif font-semibold underline pl-1 hover:scale-105">
+              <p className="font-serif font-semibold underline hover:scale-105">
                 @karunawedding
               </p>
             </a>
