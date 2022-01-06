@@ -10,8 +10,6 @@ import ImageGallery from "../components/ImageGallery";
 import BrideGroom from "../layouts/BrideGroom";
 import Guestbook from "../layouts/Guestbook";
 import Layout from "../layouts/Layout";
-import Venue from "../layouts/Venue";
-import RSVP from "../layouts/RSVP";
 import Footer from "../components/Footer";
 import Livestream from "../layouts/Livestream";
 import Gift from "../layouts/Gift";

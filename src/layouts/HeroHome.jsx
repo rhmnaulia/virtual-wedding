@@ -40,7 +40,7 @@ export default function HeroHome() {
             <h1 className="font-typography text-5xl lg:text-6xl py-4 text-accent text-shadow-lg">
               Indra & Fidelia
             </h1>
-            <p>26 Februari 2022 | 11:00 WIB (GMT +7)</p>
+            <p className="font-serif">26 Februari 2022 | 11:00 WIB (GMT +7)</p>
 
             <div className="mt-5  max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8 hover:cursor-pointer">
               <div className="rounded-md  flex justify-center">
@@ -49,12 +49,10 @@ export default function HeroHome() {
                 >
                   <a
                     target="_blank"
-                    className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-secondary bg-secondary  text-base font-medium rounded-md text-palewhite  hover:bg-gray-300 hover:text-secondary md:py-2 md:text-lg md:px-10"
+                    className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-secondary bg-secondary  text-base font-medium rounded-md text-button  hover:bg-gray-300 hover:text-secondary md:py-2 md:text-lg md:px-10"
                   >
                     <ClockIcon className="h-6 w-6" aria-hidden="true" />{" "}
-                    <span className="hover:cursor-pointer text-">
-                      Remind me
-                    </span>
+                    <span className="hover:cursor-pointer">Remind me</span>
                   </a>
                 </Link>
               </div>

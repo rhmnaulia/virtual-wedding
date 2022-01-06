@@ -10,6 +10,8 @@ module.exports = {
         secondary: "#79a090",
         accent: "#D9CAB3",
         palewhite: "#F6F6F6",
+        choco: "#7C8996",
+        button: "#fff",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

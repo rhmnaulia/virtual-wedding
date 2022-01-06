@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   const Heart = () => {
     return (
@@ -23,10 +25,13 @@ export default function Footer() {
           <p className="font-sans">Made with</p>
           <Heart />
           <p className="font-sans">by</p>
-
-          <p className="font-sans font-semibold">
-            Karuna Wedding Planner {`© ${new Date().getFullYear()}`}
-          </p>
+          <Link href="https://www.instagram.com/karunawedding/">
+            <a target="_blank" rel="noopener noreferrer">
+              <p className="font-serif font-semibold underline hover:scale-105">
+                @karunawedding
+              </p>
+            </a>
+          </Link>
         </div>
       </div>
     </footer>
