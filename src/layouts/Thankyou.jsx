@@ -7,7 +7,7 @@ function Thankyou() {
     <div className="text-center text-palewhite bg-opacity-100 flex flex-col justify-center items-center thankyou-container py-16">
       <Container>
         <div className="px-2">
-          <h1 className="text-5xl text-secondary font-typography mb-10 font-semibold">
+          <h1 className="text-4xl text-secondary font-typography mb-10 font-semibold">
             Thank You
           </h1>
           <p className="my-5 md:my-2 text-base md:text-xl font-serif">

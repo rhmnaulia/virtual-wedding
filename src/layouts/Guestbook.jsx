@@ -49,7 +49,7 @@ export default function Guestbook() {
       <div className="relative mx-auto lg:grid lg:grid-cols-12">
         <div className="bg-primary py-10 px-6 sm:px-6 lg:col-span-5 lg:px-14 lg:py-16 xl:pr-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <h1 className="text-5xl font-typography font-semibold text-secondary pb-10">
+            <h1 className="text-4xl font-typography font-semibold text-secondary pb-10">
               Guestbook
             </h1>
             <form
@@ -95,7 +95,7 @@ export default function Guestbook() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-button bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-palewhite bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
                 >
                   Submit
                 </button>
