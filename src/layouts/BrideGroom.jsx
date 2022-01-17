@@ -28,20 +28,20 @@ export default function BrideGroom() {
                   className="rounded-full"
                 />
               </div>
-              <h1 className="font-typography pb-1 text-accent font-medium text-3xl">
+              <h1 className="font-typography pb-1 text-secondary font-medium text-3xl">
                 Indra Suryadi
               </h1>
               <p className="font-serif text-sm md:text-base">
                 Son of Mr. Bunnady & Mrs. Sumarni
               </p>
-              <span className="flex mt-6 flex-row justify-center text-[#C7AE86] text-sm  md:text-base">
+              <span className="flex mt-6 flex-row justify-center text-[#FFD1DC] text-sm  md:text-base">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#C7AE86"
+                  stroke="#FFD1DC"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -69,20 +69,20 @@ export default function BrideGroom() {
                   className="rounded-full"
                 />
               </div>
-              <h1 className="font-typography pb-1 font-medium text-3xl text-accent">
+              <h1 className="font-typography pb-1 font-medium text-3xl text-secondary">
                 Fidelia Andrean
               </h1>
               <p className="font-serif text-sm md:text-base">
                 Second Daughter of Mr. Tjin Ay Fha & Mrs. Suzan Siu Lany
               </p>
-              <span className="flex mt-6 flex-row justify-center text-[#C7AE86] text-sm md:text-base">
+              <span className="flex mt-6 flex-row justify-center text-[#FFD1DC] text-sm md:text-base">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#C7AE86"
+                  stroke="#FFD1DC"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

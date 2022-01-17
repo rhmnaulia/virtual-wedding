@@ -7,7 +7,7 @@ const Pause = () => {
       className="h-11 w-11 rounded-full bg-secondary"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="#D9CAB3"
+      stroke="#F6F6F6"
     >
       <path
         strokeLinecap="round"
@@ -26,7 +26,7 @@ const Play = () => {
       className="h-11 w-11 bg-secondary rounded-full"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="#D9CAB3"
+      stroke="#F6F6F6"
     >
       <path
         strokeLinecap="round"

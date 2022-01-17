@@ -11,8 +11,8 @@ export default function Landing({ btnAction }) {
       <div className="relative pt-6 pb-16 sm:pb-24">
         <main className="mt-16 mx-auto max-w-7xl px-16 sm:mt-24">
           <div className="text-center">
-            <h1 className="text-md tracking-tight lg:text-2xl">
-              <span className="block text-palewhite xl:inline font-serif tracking-wider">
+            <h1 className="text-lg tracking-tight lg:text-2xl">
+              <span className="block text-palewhite xl:inline font-serif tracking-wider drop-shadow-xl">
                 With pride and joy, we invite you to be a part of our special
                 day
               </span>

@@ -34,10 +34,10 @@ export default function HeroHome() {
           <div className="text-center">
             <h1 className="text-sm tracking-tight md:text-xl">
               <span className="block xl:inline font-serif tracking-wider">
-                Undangan Pernikahan
+                Wedding Invitation
               </span>
             </h1>
-            <h1 className="font-typography text-5xl lg:text-6xl py-4 text-accent text-shadow-lg">
+            <h1 className="font-typography text-5xl lg:text-6xl py-4 text-secondary text-shadow-lg">
               Indra & Fidelia
             </h1>
             <p className="font-serif">26 Februari 2022 | 11:00 WIB (GMT +7)</p>
@@ -45,11 +45,11 @@ export default function HeroHome() {
             <div className="mt-5  max-w-md mx-auto sm:flex sm:justify-center justify-center md:mt-8 hover:cursor-pointer">
               <div className="rounded-md  flex justify-center">
                 <Link
-                  href={`https://calendar.google.com/event?action=TEMPLATE&tmeid=NmVjMTgycG5mbjNtdGJiNGt1Z252N2NsZ3MgZTY3YnRjNWg2dnBqMWhpNnU1c3NrMTVvaW9AZw&tmsrc=e67btc5h6vpj1hi6u5ssk15oio%40group.calendar.google.com`}
+                  href={`https://calendar.google.com/event?action=TEMPLATE&tmeid=NTRkMGRjN3U4OTNhMm5yb2twYmxndmp2bHUgOHByZzZydmltcGU0Yzk0cDUxNzZxa3JsbXNAZw&tmsrc=8prg6rvimpe4c94p5176qkrlms%40group.calendar.google.com`}
                 >
                   <a
                     target="_blank"
-                    className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-secondary bg-secondary  text-base font-medium rounded-md text-button  hover:bg-gray-300 hover:text-secondary md:py-2 md:text-lg md:px-10"
+                    className="md:w-full lg:w-full text-center w-64 flex items-center space-x-2 justify-center px-8 py-3  border border-secondary bg-secondary  text-base font-medium rounded-md text-button  hover:backdrop-blur-xl hover:bg-transparent hover:text-secondary md:py-2 md:text-lg md:px-10"
                   >
                     <ClockIcon className="h-6 w-6" aria-hidden="true" />{" "}
                     <span className="hover:cursor-pointer">Remind me</span>
