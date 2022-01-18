@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { saveAs } from "file-saver";
-import Qris from "../../public/static/images/Qris.jpg";
+import { ImagesStock } from "../components/ImagesStock";
 
 const Gift = () => {
   const saveFile = () => {
@@ -15,8 +15,10 @@ const Gift = () => {
         </h1>
         <div className="lg:w-96 w-64 mx-auto">
           <Image
-            src={Qris}
+            src={ImagesStock.qris}
             alt="Qris"
+            width="200"
+            height="300"
             layout="responsive"
             objectFit="cover"
             className="rounded-xl"

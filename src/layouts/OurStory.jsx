@@ -1,5 +1,5 @@
-import CoupleImage from "../../public/static/images/our-story.jpg";
 import Image from "next/image";
+import { ImagesStock } from "../components/ImagesStock";
 
 function OurStory() {
   return (
@@ -10,7 +10,7 @@ function OurStory() {
 
       <div className="mb-8 h-72 w-72 relative">
         <Image
-          src={CoupleImage}
+          src={ImagesStock.ourstory}
           alt="OurPict"
           layout="fill"
           objectFit="cover"
