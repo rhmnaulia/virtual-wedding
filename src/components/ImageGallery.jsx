@@ -1,38 +1,32 @@
 import Image from "next/image";
 import React, { Component } from "react";
 import Slider from "react-slick";
-
-import img_1 from "../../public/static/images/carousel/img-1.jpeg";
-import img_2 from "../../public/static/images/carousel/img-2.jpg";
-import img_3 from "../../public/static/images/carousel/img-3.jpg";
-import img_4 from "../../public/static/images/carousel/img-4.jpg";
-import img_5 from "../../public/static/images/carousel/img-5.jpg";
-import img_6 from "../../public/static/images/carousel/img-6.jpg";
+import { ImagesStock } from "./ImagesStock";
 
 const images = [
   {
     name: "our moments",
-    src: img_1,
+    src: ImagesStock.ourmoment1,
   },
   {
     name: "our moments",
-    src: img_2,
+    src: ImagesStock.ourmoment2,
   },
   {
     name: "our moments",
-    src: img_3,
+    src: ImagesStock.ourmoment3,
   },
   {
     name: "our moments",
-    src: img_4,
+    src: ImagesStock.ourmoment4,
   },
   {
     name: "our moments",
-    src: img_5,
+    src: ImagesStock.ourmoment5,
   },
   {
     name: "our moments",
-    src: img_6,
+    src: ImagesStock.ourmoment6,
   },
 ];
 

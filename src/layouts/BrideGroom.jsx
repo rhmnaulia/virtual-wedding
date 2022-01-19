@@ -1,8 +1,7 @@
 import Container from "../components/Container";
 import Image from "next/image";
 import Link from "next/link";
-import groom from "../../public/static/images/groom.jpg";
-import bride from "../../public/static/images/bride.jpg";
+import { ImagesStock } from "../components/ImagesStock";
 
 export default function BrideGroom() {
   return (
@@ -21,7 +20,7 @@ export default function BrideGroom() {
             <div className="text-center mb-16 lg:mb-0">
               <div className="mb-4 lg:h-72 lg:w-72 h-64 w-64 mx-auto relative">
                 <Image
-                  src={groom}
+                  src={ImagesStock.groom}
                   alt="Groom"
                   layout="fill"
                   objectFit="cover"
@@ -62,7 +61,7 @@ export default function BrideGroom() {
             <div className="text-center">
               <div className="mb-4 lg:h-72 lg:w-72 h-64 w-64 mx-auto relative">
                 <Image
-                  src={bride}
+                  src={ImagesStock.bride}
                   alt="Bride"
                   layout="fill"
                   objectFit="cover"
