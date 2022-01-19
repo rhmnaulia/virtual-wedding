@@ -77,8 +77,7 @@ html {
 }
 
 .thankyou-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1641348169/large_img_2_71b84742cd.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1641348169/large_img_2_71b84742cd.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -127,4 +126,16 @@ html {
 .line:before,
 .line:after {
   height: 10px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .livestream-container {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .thankyou-container {
+    background-size: cover;
+    background-attachment: scroll;
+  }
 }

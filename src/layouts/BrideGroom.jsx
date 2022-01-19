@@ -72,7 +72,8 @@ export default function BrideGroom() {
                 Fidelia Andrean
               </h1>
               <p className="font-serif text-sm md:text-base">
-                Second Daughter of Mr. Tjin Ay Fha & Mrs. Suzan Siu Lany
+                Youngest Daughter of <br /> Mr. Tjin Ay Fha & Mrs. Suzan Siu
+                Lany
               </p>
               <span className="flex mt-6 flex-row justify-center text-[#FFD1DC] text-sm md:text-base">
                 <svg
