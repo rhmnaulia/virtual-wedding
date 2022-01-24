@@ -28,6 +28,18 @@ const images = [
     name: "our moments",
     src: ImagesStock.ourmoment6,
   },
+  {
+    name: "our moments",
+    src: ImagesStock.ourmoment7,
+  },
+  {
+    name: "our moments",
+    src: ImagesStock.ourmoment8,
+  },
+  {
+    name: "our moments",
+    src: ImagesStock.ourmoment9,
+  },
 ];
 
 export default function ImageGallery() {
