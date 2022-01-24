@@ -54,7 +54,7 @@ html {
 .our-story-container {
   position: relative;
   background: linear-gradient(rgba(14, 13, 13, 0.727), rgba(14, 13, 13, 0.7)),
-    url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1642525539/ourstory_ipxuwd.jpg")
+    url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1643032762/ourstory-mobile_xm75ze.jpg")
       no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -138,6 +138,11 @@ html {
   }
 
   .thankyou-container {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .our-story-container {
     background-size: cover;
     background-attachment: scroll;
   }
