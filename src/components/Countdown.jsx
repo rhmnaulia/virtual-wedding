@@ -33,7 +33,23 @@ export default function Countdown() {
 
   const timerComponents = Object.keys(timeLeft).map((interval) => {
     if (!timeLeft[interval]) {
-      return;
+      return (
+        <span
+          suppressHydrationWarning
+          key={shortid.generate()}
+          className="flex flex-col border-2 md:px-5 px-3 py-3 md:mx-3 mx-0.5 rounded bg-black bg-opacity-50 font-serif tracking-wider md:text-3xl text-base border-none"
+        >
+          <span
+            suppressHydrationWarning
+            className="text-xl md:text-3xl font-semibold"
+          >
+            {0}
+          </span>
+          <span suppressHydrationWarning className="font-thin text-accent">
+            {interval}
+          </span>
+        </span>
+      );
     }
 
     return (

@@ -52,12 +52,14 @@ html {
   background-repeat: no-repeat;
 }
 .our-story-container {
+  position: relative;
   background: linear-gradient(rgba(14, 13, 13, 0.727), rgba(14, 13, 13, 0.7)),
-    url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1642525539/ourstory_ipxuwd.jpg");
+    url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1643032762/ourstory-mobile_xm75ze.jpg")
+      no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .text-shadow {
@@ -77,7 +79,8 @@ html {
 }
 
 .thankyou-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1641348169/large_img_2_71b84742cd.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/karuna-wedding-org/image/upload/v1641348169/large_img_2_71b84742cd.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -135,6 +138,11 @@ html {
   }
 
   .thankyou-container {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .our-story-container {
     background-size: cover;
     background-attachment: scroll;
   }
