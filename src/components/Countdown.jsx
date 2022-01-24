@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import shortid from "shortid";
+import { Link } from "react-scroll";
 
 function calculateTimeLeft() {
   const difference = +new Date(`2022-02-26`) - +new Date();
@@ -61,14 +62,16 @@ export default function Countdown() {
       ) : (
         <div
           suppressHydrationWarning
-          className="text-palewhite px-5 text-center"
+          className="flex flex-col justify-center items-center text-palewhite px-5 text-center"
         >
-          <h3 className="font-serif text-4xl lg:text-3xl">Today is the day!</h3>
-          <p className="text-justify mt-3 font-serif text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            pariatur dolores similique ipsum veritatis, illo eveniet deserunt,
-            autem nostrum aliquido.
-          </p>
+          <h3 className="font-typography text-3xl text-palewhite lg:text-5xl">
+            Today is the day !
+          </h3>
+          <Link to="livestream-target" spy={true} smooth={true} duration={1000}>
+            <p className="p-5 border-2 text-center text-palewhite border-secondary bg-secondary ring-secondary ring-0 rounded-md font-bold text-lg  sm:text-2xl mt-3 font-serif">
+              Watch Livestream
+            </p>
+          </Link>
         </div>
       )}
     </div>

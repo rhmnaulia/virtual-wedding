@@ -36,6 +36,9 @@ export default function Layout({ children }) {
           },
           animate: {
             opacity: 1,
+            transition: {
+              duration: 2,
+            },
           },
         }}
       >

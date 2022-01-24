@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { ImagesStock } from "./ImagesStock";
 
@@ -37,7 +37,7 @@ export default function ImageGallery() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
 
     lazyLoad: false,
     responsive: [
