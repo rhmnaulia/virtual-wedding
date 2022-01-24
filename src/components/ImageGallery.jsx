@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { ImagesStock } from "./ImagesStock";
 
@@ -28,6 +28,18 @@ const images = [
     name: "our moments",
     src: ImagesStock.ourmoment6,
   },
+  {
+    name: "our moments",
+    src: ImagesStock.ourmoment7,
+  },
+  {
+    name: "our moments",
+    src: ImagesStock.ourmoment8,
+  },
+  {
+    name: "our moments",
+    src: ImagesStock.ourmoment9,
+  },
 ];
 
 export default function ImageGallery() {
@@ -37,7 +49,7 @@ export default function ImageGallery() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
 
     lazyLoad: false,
     responsive: [

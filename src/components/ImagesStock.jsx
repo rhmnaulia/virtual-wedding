@@ -11,8 +11,15 @@ export const ImagesStock = {
     "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1641348180/large_img_4_9e80bfce8d.jpg",
   ourmoment5:
     "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1642515837/our_moments_5_edmo1f.jpg",
+
   ourmoment6:
     "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1641348171/large_img_6_fb24be03e7.jpg",
+  ourmoment7:
+    "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1643016218/tambahan_momen_1_compressed_lqriva.jpg",
+  ourmoment8:
+    "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1643016461/tambahan_momen_2_com_jlz46q.jpg",
+  ourmoment9:
+    "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1643016697/tambahan_momen_3_com_lszd2h.jpg",
   groom:
     "https://res.cloudinary.com/karuna-wedding-org/image/upload/v1642525535/groom_rdk04e.jpg",
   bride:

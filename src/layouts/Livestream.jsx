@@ -73,7 +73,7 @@ function Livestream() {
         animate={titleAnimation}
         className="livestream-message text-center pt-7 pb-5  px-4 sm:text-lg sm:pt-9 sm:px-16  text-sm font-serif"
       >
-        <p className="pb-6">
+        <p className="livestream-target pb-6">
           With concern for the COVID- 19 Pandemic situation, our venue should
           limit the number of celebrants. With an abundance of caution and care
           for our guests, we have decided to conduct an intimate reception with

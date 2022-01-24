@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ImagesStock } from "../components/ImagesStock";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 
 function OurStory() {
