@@ -2,22 +2,91 @@ import Container from "../components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { ImagesStock } from "../components/ImagesStock";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useRef } from "react";
+import { useAnimation } from "framer-motion";
 
 export default function BrideGroom() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  const brideAnimation = useAnimation();
+  const brideGroomLayout = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 2,
+          delay: 0.3,
+          bounce: 0.5,
+        },
+      });
+      brideAnimation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 2,
+          delay: 0.3,
+          bounce: 0.5,
+        },
+      });
+      brideGroomLayout.start({
+        y: 0,
+        scale: 1,
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        y: -70,
+        opacity: 0,
+      });
+      brideAnimation.start({
+        y: 70,
+        opacity: 0,
+      });
+      brideGroomLayout.start({
+        y: 0,
+        scale: 0,
+        opacity: 0,
+      });
+    }
+  }, [inView]);
+
   return (
     <div className="bg-primary text-palewhite">
       <Container>
         <div className="flex flex-col items-center py-16 px-4 ">
-          <h1 className="font-typography text-4xl text-secondary font-semibold">
+          <motion.h1
+            animate={brideGroomLayout}
+            className="font-typography text-4xl text-secondary font-semibold"
+          >
             Bride & Groom
-          </h1>
-          <span className="text-center text-sm md:text-base pt-8 font-serif">
+          </motion.h1>
+          <motion.span
+            animate={brideGroomLayout}
+            className="text-center text-sm md:text-base pt-8 font-serif"
+          >
             <p className="pb-4"> Philippians 1 : 3</p>
             <p>I thank my God every time I remember you.</p>
-          </span>
+          </motion.span>
 
-          <div className="flex lg:flex-row flex-col  lg:gap-x-52 pt-12">
-            <div className="text-center mb-16 lg:mb-0">
+          <div
+            ref={ref}
+            className="flex lg:flex-row flex-col  lg:gap-x-52 pt-12"
+          >
+            <motion.div
+              animate={animation}
+              className="text-center mb-16 lg:mb-0"
+            >
               <div className="mb-4 lg:h-72 lg:w-72 h-64 w-64 mx-auto relative">
                 <Image
                   src={ImagesStock.groom}
@@ -56,9 +125,13 @@ export default function BrideGroom() {
                   </a>
                 </Link>
               </span>
-            </div>
+            </motion.div>
 
-            <div className="text-center">
+            <motion.div
+              animate={brideAnimation}
+              ref={ref}
+              className="text-center"
+            >
               <div className="mb-4 lg:h-72 lg:w-72 h-64 w-64 mx-auto relative">
                 <Image
                   src={ImagesStock.bride}
@@ -98,7 +171,7 @@ export default function BrideGroom() {
                   </a>
                 </Link>
               </span>
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>
