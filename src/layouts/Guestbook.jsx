@@ -183,11 +183,11 @@ export default function Guestbook() {
                         alt=""
                       />
                     </div>
-                    <div className="ml-4 sm:w-72 md:w-3/4 lg:w-3/4">
-                      <div className="text-sm leading-5 font-medium text-accent break-all">
+                    <div className="ml-4 sm:w-72 md:w-3/4 lg:w-3/5">
+                      <div className="text-sm leading-5 font-medium text-accent break-words">
                         {guest.name}
                       </div>
-                      <div className="mt-0 text-sm leading-5 text-palewhite break-all">
+                      <div className="mt-0 text-sm leading-5 text-palewhite break-words">
                         {guest.message}
                       </div>
                     </div>
